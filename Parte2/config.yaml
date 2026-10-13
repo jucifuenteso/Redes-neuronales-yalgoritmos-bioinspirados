@@ -1,0 +1,35 @@
+# Configuracion del experimento - Parte 2: TSP de las 47 capitales peninsulares
+# Todos los parametros se pueden cambiar aqui, sin editar el codigo fuente
+# (requisito explicito de la rubrica, Entregable 3).
+
+semilla: 1983
+
+# Carpeta donde estan los 4 CSV generados por get_data.py
+# (coordenadas_47_ciudades.csv, matriz_tiempos_47x47.csv,
+#  matriz_peajes_47x47.csv, matriz_distancias_47x47.csv)
+dir_datos: "data"
+
+vehiculo:
+  nombre: "COMPLETAR: marca y modelo del vehiculo elegido"
+  consumo_l_100km: 6.5
+  precio_combustible_eur_l: 1.75
+  fuente: "COMPLETAR: URL/documento + fecha de consulta"
+
+valor_hora_eur: 20.0   # valor de la hora del vendedor (EUR/hora)
+
+aco:
+  n_hormigas: 47
+  n_iter: 300
+  alpha: 1.0
+  beta: 2.0
+  rho: 0.1          # tasa de evaporacion
+  Q: 1.0
+  tau0: 1.0
+
+ga:
+  tam_poblacion: 150
+  n_generaciones: 400
+  prob_cruce: 0.9
+  prob_mutacion: 0.2
+  elite_frac: 0.1
+  tam_torneo: 3
