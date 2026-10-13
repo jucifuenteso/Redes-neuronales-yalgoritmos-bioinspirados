@@ -7,7 +7,7 @@ semilla: 1983
 # Carpeta donde estan los 4 CSV generados por get_data.py
 # (coordenadas_47_ciudades.csv, matriz_tiempos_47x47.csv,
 #  matriz_peajes_47x47.csv, matriz_distancias_47x47.csv)
-dir_datos: "data"
+dir_datos: "."
 
 vehiculo:
   nombre: "COMPLETAR: marca y modelo del vehiculo elegido"
