@@ -1,0 +1,33 @@
+# Environment Variables & Secrets (CRÍTICO: No subir claves)
+.env
+.env.local
+*.env
+
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+ENV/
+
+# Caché y archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Archivos de configuración de VS Code e IDEs
+.vscode/
+.idea/
+*.swp
+
+
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Distribución y empaquetado (builds)
+dist/
+build/
+*.egg-info/
+
