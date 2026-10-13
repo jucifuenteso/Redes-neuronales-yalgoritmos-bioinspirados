@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from dotenv import load_dotenv, find_dotenv
 
-# Cargar variables de entorno desde el archivo .env
+# Cargar variables de entorno desde el archivo .env (busca en la subcarpeta actual o superior)
 load_dotenv(find_dotenv())
 HERE_API_KEY = os.getenv("HERE_API_KEY")
 
@@ -52,24 +52,33 @@ capitales_info: list[dict] = [
     {"ciudad": "Toledo", "provincia": "Toledo"}
 ]
 
+
 def obtener_peaje_eur(lat1, lon1, lat2, lon2, api_key):
-    """Consulta la API de HERE para obtener el coste total del peaje en EUR."""
-    url = f"https://router.hereapi.com/v8/routes?transportMode=car&origin={lat1},{lon1}&destination={lat2},{lon2}&return=tolls&apikey={api_key}"
-    res = requests.get(url).json()
-    total_eur = 0.0
+    """Consulta la API de HERE v8 para obtener el coste total del peaje en EUR."""
+    url = (
+        f"https://router.hereapi.com/v8/routes"
+        f"?transportMode=car"
+        f"&origin={lat1},{lon1}"
+        f"&destination={lat2},{lon2}"
+        f"&return=tolls"
+        f"&currency=EUR"
+        f"&apikey={api_key}"
+    )
     
     try:
-        sections = res['routes'][0]['sections']
+        res = requests.get(url).json()
+        total_eur = 0.0
+        sections = res.get('routes', [{}])[0].get('sections', [])
+        
         for section in sections:
             if 'tolls' in section:
                 for toll in section['tolls']:
                     for fare in toll.get('fares', []):
-                        if fare.get('currency') == 'EUR':
-                            total_eur += float(fare.get('price', {}).get('value', 0.0))
-    except (KeyError, IndexError):
-        pass
-        
-    return round(total_eur, 2)
+                        total_eur += float(fare.get('price', {}).get('value', 0.0))
+                        
+        return round(total_eur, 2)
+    except Exception:
+        return 0.0
 
 
 def main():
@@ -93,7 +102,7 @@ def main():
 
         df_coordenadas = pd.DataFrame(capitales_info)
         df_coordenadas.to_csv(file_coords, index=False)
-        print(f"✔ Archivo '{file_coords}' generado.\n")
+        print(f"✔ Archivo '{file_coords}' generado con éxito.\n")
 
     ciudades = df_coordenadas['ciudad'].tolist()
     n = len(ciudades)
@@ -119,7 +128,7 @@ def main():
             matriz_simetrica = (df_matriz.values + df_matriz.values.T) / 2.0
             df_tiempos = pd.DataFrame(np.round(matriz_simetrica, 1), index=ciudades, columns=ciudades)
             df_tiempos.to_csv(file_tiempos)
-            print(f"✔ Archivo '{file_tiempos}' generado.\n")
+            print(f"✔ Archivo '{file_tiempos}' generado con éxito.\n")
         else:
             print("❌ Error al consultar la API de OSRM.")
 
@@ -136,23 +145,27 @@ def main():
             print("   Configura tu API Key en el .env antes de generar la matriz de peajes.")
             return
 
-        print("⏳ Consultando HERE Routing API para generar matriz de peajes...")
+        print("⏳ Consultando HERE Routing API para generar matriz de peajes (666 trayectos)...")
         matriz_peajes = np.zeros((n, n))
 
+        # Recorrer la mitad superior por simetría A -> B = B -> A
         for i in range(n):
+            print(f"   --> Procesando trayectos desde {ciudades[i]} ({i + 1}/{n})...")
             for j in range(i + 1, n):
                 lat_o, lon_o = df_coordenadas.loc[i, 'latitud'], df_coordenadas.loc[i, 'longitud']
                 lat_d, lon_d = df_coordenadas.loc[j, 'latitud'], df_coordenadas.loc[j, 'longitud']
                 
                 costo = obtener_peaje_eur(lat_o, lon_o, lat_d, lon_d, HERE_API_KEY)
+                
                 matriz_peajes[i][j] = costo
                 matriz_peajes[j][i] = costo
 
         df_peajes = pd.DataFrame(matriz_peajes, index=ciudades, columns=ciudades)
         df_peajes.to_csv(file_peajes)
-        print(f"✔ Archivo '{file_peajes}' generado.\n")
+        print(f"✔ Archivo '{file_peajes}' generado con éxito.\n")
 
     print("\n🚀 Todos los datasets están listos y cargados para el algoritmo ACO.")
+
 
 if __name__ == "__main__":
     main()
