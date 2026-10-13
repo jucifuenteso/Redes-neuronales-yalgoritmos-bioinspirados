@@ -1,0 +1,601 @@
+funcion,n,metodo,corrida,f_final,exito,n_f,n_grad,evals_equiv,evals_hasta_umbral,parada
+rosenbrock,2,GD paso fijo,0,1.931484984020076e-10,True,0,25000,100000,34284.0,presupuesto
+rosenbrock,2,GD paso fijo,1,1.9232730665112363e-10,True,0,25000,100000,34260.0,presupuesto
+rosenbrock,2,GD paso fijo,2,2.338199831944438e-10,True,0,25000,100000,35240.0,presupuesto
+rosenbrock,2,GD paso fijo,3,2.592295245787425e-10,True,0,25000,100000,35756.0,presupuesto
+rosenbrock,2,GD paso fijo,4,2.927618519636537e-10,True,0,25000,100000,36364.0,presupuesto
+rosenbrock,2,GD paso fijo,5,1.6490588899334316e-10,True,0,25000,100000,33492.0,presupuesto
+rosenbrock,2,GD paso fijo,6,4.2295511631273575e-10,True,0,25000,100000,38208.0,presupuesto
+rosenbrock,2,GD paso fijo,7,1.2024742823077056e-10,True,0,25000,100000,31912.0,presupuesto
+rosenbrock,2,GD paso fijo,8,3.707229205337488e-11,True,0,25000,100000,26020.0,presupuesto
+rosenbrock,2,GD paso fijo,9,2.382413783204855e-10,True,0,25000,100000,35332.0,presupuesto
+rosenbrock,2,GD paso fijo,10,1.9210768179745768e-10,True,0,25000,100000,34256.0,presupuesto
+rosenbrock,2,GD paso fijo,11,1.9401192018475809e-10,True,0,25000,100000,34304.0,presupuesto
+rosenbrock,2,GD paso fijo,12,1.926962496497934e-10,True,0,25000,100000,34272.0,presupuesto
+rosenbrock,2,GD paso fijo,13,6.769592591077151e-10,True,0,25000,100000,40244.0,presupuesto
+rosenbrock,2,GD paso fijo,14,1.7132304499621364e-10,True,0,25000,100000,33684.0,presupuesto
+rosenbrock,2,GD paso fijo,15,1.9346462434565578e-10,True,0,25000,100000,34292.0,presupuesto
+rosenbrock,2,GD paso fijo,16,1.7206384521656495e-10,True,0,25000,100000,33704.0,presupuesto
+rosenbrock,2,GD paso fijo,17,1.1606568372490723e-10,True,0,25000,100000,31732.0,presupuesto
+rosenbrock,2,GD paso fijo,18,1.949957240665978e-10,True,0,25000,100000,34332.0,presupuesto
+rosenbrock,2,GD paso fijo,19,1.1964305941890136e-09,True,0,25000,100000,43096.0,presupuesto
+rosenbrock,2,GD paso fijo,20,4.1646354884635175e-10,True,0,25000,100000,38132.0,presupuesto
+rosenbrock,2,GD paso fijo,21,1.873343422007913e-10,True,0,25000,100000,34132.0,presupuesto
+rosenbrock,2,GD paso fijo,22,1.3795592160463485e-10,True,0,25000,100000,32600.0,presupuesto
+rosenbrock,2,GD paso fijo,23,1.2551318411008677e-10,True,0,25000,100000,32124.0,presupuesto
+rosenbrock,2,GD paso fijo,24,1.344777566455234e-10,True,0,25000,100000,32472.0,presupuesto
+rosenbrock,2,GD paso fijo,25,2.915114979566084e-11,True,0,25000,100000,24816.0,presupuesto
+rosenbrock,2,GD paso fijo,26,2.8069115581274385e-10,True,0,25000,100000,36156.0,presupuesto
+rosenbrock,2,GD paso fijo,27,2.709740890394758e-10,True,0,25000,100000,35980.0,presupuesto
+rosenbrock,2,GD paso fijo,28,1.8961469983587584e-10,True,0,25000,100000,34192.0,presupuesto
+rosenbrock,2,GD paso fijo,29,1.9298175987220294e-10,True,0,25000,100000,34280.0,presupuesto
+rosenbrock,2,GD backtracking,0,6.004579651743283e-13,True,31040,15516,93104,23414.0,gradiente
+rosenbrock,2,GD backtracking,1,6.004579651743283e-13,True,31040,15516,93104,23414.0,gradiente
+rosenbrock,2,GD backtracking,2,5.941311920248542e-13,True,30997,15494,92973,23235.0,gradiente
+rosenbrock,2,GD backtracking,3,5.996511761541519e-13,True,29629,14810,88869,19173.0,gradiente
+rosenbrock,2,GD backtracking,4,6.172177859974596e-13,True,30000,14996,89984,20385.0,gradiente
+rosenbrock,2,GD backtracking,5,6.116641804449517e-13,True,29880,14936,89624,19989.0,gradiente
+rosenbrock,2,GD backtracking,6,6.093098590039974e-13,True,30440,15216,91304,21657.0,gradiente
+rosenbrock,2,GD backtracking,7,6.129272459787504e-13,True,29658,14825,88958,19335.0,gradiente
+rosenbrock,2,GD backtracking,8,6.216976985703853e-13,True,30222,15107,90650,21075.0,gradiente
+rosenbrock,2,GD backtracking,9,6.082617598193757e-13,True,28696,14344,86072,16419.0,gradiente
+rosenbrock,2,GD backtracking,10,5.972268887323663e-13,True,29593,14792,88761,19047.0,gradiente
+rosenbrock,2,GD backtracking,11,6.004579651743283e-13,True,31041,15517,93109,23419.0,gradiente
+rosenbrock,2,GD backtracking,12,6.173791149453382e-13,True,30858,15425,92558,22959.0,gradiente
+rosenbrock,2,GD backtracking,13,9.44525232492524e-13,True,33339,16665,99999,31329.0,presupuesto
+rosenbrock,2,GD backtracking,14,5.966445609270081e-13,True,29931,14961,89775,20055.0,gradiente
+rosenbrock,2,GD backtracking,15,6.154711960220157e-13,True,31020,15506,93044,23433.0,gradiente
+rosenbrock,2,GD backtracking,16,6.137074175516637e-13,True,29794,14893,89366,19743.0,gradiente
+rosenbrock,2,GD backtracking,17,6.13493154549855e-13,True,29688,14840,89048,19425.0,gradiente
+rosenbrock,2,GD backtracking,18,6.052510277898533e-13,True,27530,13761,82574,12903.0,gradiente
+rosenbrock,2,GD backtracking,19,2.253008907977398e-12,True,33339,16665,99999,34545.0,presupuesto
+rosenbrock,2,GD backtracking,20,6.154868273758882e-13,True,30352,15172,91040,21429.0,gradiente
+rosenbrock,2,GD backtracking,21,6.29256676152739e-13,True,29830,14911,89474,19947.0,gradiente
+rosenbrock,2,GD backtracking,22,6.065428074793225e-13,True,29899,14945,89679,20019.0,gradiente
+rosenbrock,2,GD backtracking,23,6.24816173941364e-13,True,30164,15078,90476,20924.0,gradiente
+rosenbrock,2,GD backtracking,24,5.973413410485154e-13,True,30141,15066,90405,20691.0,gradiente
+rosenbrock,2,GD backtracking,25,6.265389274346739e-13,True,30266,15129,90782,21243.0,gradiente
+rosenbrock,2,GD backtracking,26,6.167699244412503e-13,True,26838,13415,80498,10893.0,gradiente
+rosenbrock,2,GD backtracking,27,6.036686287862146e-13,True,31037,15514,93093,23421.0,gradiente
+rosenbrock,2,GD backtracking,28,6.078005519464539e-13,True,29840,14916,89504,19851.0,gradiente
+rosenbrock,2,GD backtracking,29,6.004579651743283e-13,True,31040,15516,93104,23414.0,gradiente
+rosenbrock,2,GA,0,0.00045710672813758965,False,18400,0,18400,,estancamiento
+rosenbrock,2,GA,1,4.191785090749768e-05,True,13360,0,13360,6664.0,estancamiento
+rosenbrock,2,GA,2,6.052124328217126e-06,True,18256,0,18256,7384.0,estancamiento
+rosenbrock,2,GA,3,0.003612482141422889,False,31036,0,31036,,estancamiento
+rosenbrock,2,GA,4,1.784736656803329e-05,True,34960,0,34960,23116.0,estancamiento
+rosenbrock,2,GA,5,0.0009914151092035816,False,8032,0,8032,,estancamiento
+rosenbrock,2,GA,6,4.161681801843966e-05,True,14152,0,14152,8716.0,estancamiento
+rosenbrock,2,GA,7,0.000623095089078764,False,10768,0,10768,,estancamiento
+rosenbrock,2,GA,8,1.2886494174454526e-05,True,25600,0,25600,19552.0,estancamiento
+rosenbrock,2,GA,9,4.0683610204718246e-05,True,17680,0,17680,10948.0,estancamiento
+rosenbrock,2,GA,10,0.0004334145177753,False,11848,0,11848,,estancamiento
+rosenbrock,2,GA,11,0.00020604748885692502,False,37228,0,37228,,estancamiento
+rosenbrock,2,GA,12,1.0728712837396728e-07,True,21028,0,21028,9976.0,estancamiento
+rosenbrock,2,GA,13,2.3208061744693694e-06,True,34744,0,34744,24628.0,estancamiento
+rosenbrock,2,GA,14,0.00046201397609495985,False,15808,0,15808,,estancamiento
+rosenbrock,2,GA,15,0.00045469708630076916,False,13144,0,13144,,estancamiento
+rosenbrock,2,GA,16,2.4364257547036878e-05,True,7888,0,7888,2848.0,estancamiento
+rosenbrock,2,GA,17,2.8680222551923746e-06,True,40648,0,40648,33916.0,estancamiento
+rosenbrock,2,GA,18,1.5078152108300502e-05,True,10624,0,10624,256.0,estancamiento
+rosenbrock,2,GA,19,2.8406143494058834e-05,True,46588,0,46588,38920.0,estancamiento
+rosenbrock,2,GA,20,3.4636413320485976e-05,True,18004,0,18004,2272.0,estancamiento
+rosenbrock,2,GA,21,8.730291689617326e-07,True,29920,0,29920,22576.0,estancamiento
+rosenbrock,2,GA,22,0.00014650682742949726,False,7240,0,7240,,estancamiento
+rosenbrock,2,GA,23,4.605327592442201e-05,True,22972,0,22972,832.0,estancamiento
+rosenbrock,2,GA,24,2.339355051759901e-06,True,20776,0,20776,15664.0,estancamiento
+rosenbrock,2,GA,25,0.0030668263022938205,False,28336,0,28336,,estancamiento
+rosenbrock,2,GA,26,0.0008232186413511949,False,9940,0,9940,,estancamiento
+rosenbrock,2,GA,27,5.900841070369676e-07,True,41080,0,41080,35320.0,estancamiento
+rosenbrock,2,GA,28,6.401835066177123e-08,True,15592,0,15592,10480.0,estancamiento
+rosenbrock,2,GA,29,4.0871784193773485e-05,True,14656,0,14656,4396.0,estancamiento
+rosenbrock,2,PSO,0,3.6491460553398336e-16,True,11120,0,11120,1200.0,estancamiento
+rosenbrock,2,PSO,1,4.36122889123464e-14,True,10760,0,10760,1440.0,estancamiento
+rosenbrock,2,PSO,2,1.5389105992836204e-14,True,12520,0,12520,2000.0,estancamiento
+rosenbrock,2,PSO,3,5.4312446794653474e-17,True,12160,0,12160,2320.0,estancamiento
+rosenbrock,2,PSO,4,1.4312451356258762e-13,True,11120,0,11120,1880.0,estancamiento
+rosenbrock,2,PSO,5,6.896945516698226e-16,True,12600,0,12600,1600.0,estancamiento
+rosenbrock,2,PSO,6,1.2512391098121294e-17,True,13800,0,13800,1920.0,estancamiento
+rosenbrock,2,PSO,7,7.161916934511061e-14,True,14240,0,14240,1880.0,estancamiento
+rosenbrock,2,PSO,8,3.831460279454654e-15,True,12560,0,12560,2520.0,estancamiento
+rosenbrock,2,PSO,9,1.1600454750521894e-13,True,10720,0,10720,1240.0,estancamiento
+rosenbrock,2,PSO,10,3.629367928766656e-13,True,9720,0,9720,1200.0,estancamiento
+rosenbrock,2,PSO,11,3.188322409919109e-13,True,9480,0,9480,1680.0,estancamiento
+rosenbrock,2,PSO,12,3.531907018549425e-15,True,12920,0,12920,2120.0,estancamiento
+rosenbrock,2,PSO,13,1.1043179776180948e-15,True,13240,0,13240,1680.0,estancamiento
+rosenbrock,2,PSO,14,1.2287502528879207e-14,True,11040,0,11040,1040.0,estancamiento
+rosenbrock,2,PSO,15,1.5522238453882245e-14,True,9640,0,9640,800.0,estancamiento
+rosenbrock,2,PSO,16,8.76669416254532e-14,True,12080,0,12080,1640.0,estancamiento
+rosenbrock,2,PSO,17,1.276753244522512e-13,True,11280,0,11280,1880.0,estancamiento
+rosenbrock,2,PSO,18,6.758587174444127e-16,True,11800,0,11800,1960.0,estancamiento
+rosenbrock,2,PSO,19,7.255920131883733e-14,True,14040,0,14040,1880.0,estancamiento
+rosenbrock,2,PSO,20,4.727852070149365e-14,True,10880,0,10880,2200.0,estancamiento
+rosenbrock,2,PSO,21,2.498013591196258e-13,True,9480,0,9480,2200.0,estancamiento
+rosenbrock,2,PSO,22,1.6415493659580014e-13,True,11040,0,11040,1800.0,estancamiento
+rosenbrock,2,PSO,23,5.359961225247714e-16,True,11880,0,11880,2200.0,estancamiento
+rosenbrock,2,PSO,24,3.887410128191134e-15,True,13080,0,13080,1680.0,estancamiento
+rosenbrock,2,PSO,25,8.463772332085687e-14,True,13160,0,13160,1760.0,estancamiento
+rosenbrock,2,PSO,26,2.0310651019530688e-14,True,11840,0,11840,1280.0,estancamiento
+rosenbrock,2,PSO,27,9.62187058034327e-14,True,12480,0,12480,2760.0,estancamiento
+rosenbrock,2,PSO,28,1.5027548106990749e-15,True,13920,0,13920,1720.0,estancamiento
+rosenbrock,2,PSO,29,3.3445761996309033e-15,True,11000,0,11000,1360.0,estancamiento
+rosenbrock,2,DE,0,1.465555650480911e-29,True,6120,0,6120,1120.0,estancamiento
+rosenbrock,2,DE,1,1.67632942359465e-30,True,6360,0,6360,1240.0,estancamiento
+rosenbrock,2,DE,2,1.232595164407831e-32,True,6080,0,6080,1080.0,estancamiento
+rosenbrock,2,DE,3,1.9721522630525295e-31,True,6360,0,6360,1000.0,estancamiento
+rosenbrock,2,DE,4,1.597443333072549e-29,True,6080,0,6080,1240.0,estancamiento
+rosenbrock,2,DE,5,1.4298103907130839e-30,True,6280,0,6280,920.0,estancamiento
+rosenbrock,2,DE,6,0.0,True,7440,0,7440,2240.0,estancamiento
+rosenbrock,2,DE,7,7.013466485480558e-30,True,6080,0,6080,1120.0,estancamiento
+rosenbrock,2,DE,8,0.0,True,6360,0,6360,1000.0,estancamiento
+rosenbrock,2,DE,9,3.1554436208840472e-30,True,6320,0,6320,1040.0,estancamiento
+rosenbrock,2,DE,10,0.0,True,6160,0,6160,840.0,estancamiento
+rosenbrock,2,DE,11,0.0,True,6440,0,6440,960.0,estancamiento
+rosenbrock,2,DE,12,1.0896141253365226e-29,True,6200,0,6200,1120.0,estancamiento
+rosenbrock,2,DE,13,0.0,True,6560,0,6560,1360.0,estancamiento
+rosenbrock,2,DE,14,0.0,True,7000,0,7000,1880.0,estancamiento
+rosenbrock,2,DE,15,1.232595164407831e-32,True,6400,0,6400,1320.0,estancamiento
+rosenbrock,2,DE,16,0.0,True,6520,0,6520,1160.0,estancamiento
+rosenbrock,2,DE,17,4.930380657631324e-30,True,6240,0,6240,1120.0,estancamiento
+rosenbrock,2,DE,18,7.888609052210118e-31,True,6240,0,6240,960.0,estancamiento
+rosenbrock,2,DE,19,1.1697328110230316e-29,True,6000,0,6000,920.0,estancamiento
+rosenbrock,2,DE,20,7.888609052210118e-31,True,5920,0,5920,920.0,estancamiento
+rosenbrock,2,DE,21,4.437342591868191e-31,True,6000,0,6000,1160.0,estancamiento
+rosenbrock,2,DE,22,1.7749370367472766e-30,True,6320,0,6320,1120.0,estancamiento
+rosenbrock,2,DE,23,1.9721522630525295e-31,True,6480,0,6480,1120.0,estancamiento
+rosenbrock,2,DE,24,0.0,True,6320,0,6320,1120.0,estancamiento
+rosenbrock,2,DE,25,0.0,True,6640,0,6640,640.0,estancamiento
+rosenbrock,2,DE,26,0.0,True,6000,0,6000,920.0,estancamiento
+rosenbrock,2,DE,27,4.930380657631324e-32,True,6400,0,6400,1160.0,estancamiento
+rosenbrock,2,DE,28,7.888609052210118e-31,True,6600,0,6600,1400.0,estancamiento
+rosenbrock,2,DE,29,1.9721522630525295e-31,True,6240,0,6240,1240.0,estancamiento
+rosenbrock,3,GD paso fijo,0,6.440614704824728e-12,True,0,25000,150000,45678.0,presupuesto
+rosenbrock,3,GD paso fijo,1,5.408326940170992e-12,True,0,25000,150000,44202.0,presupuesto
+rosenbrock,3,GD paso fijo,2,9.864544648104366e-12,True,0,25000,150000,48372.0,presupuesto
+rosenbrock,3,GD paso fijo,3,8.129364366090841e-12,True,0,25000,150000,47148.0,presupuesto
+rosenbrock,3,GD paso fijo,4,1.0031735612904166e-11,True,0,25000,150000,48480.0,presupuesto
+rosenbrock,3,GD paso fijo,5,6.3365268905227616e-12,True,0,25000,150000,45576.0,presupuesto
+rosenbrock,3,GD paso fijo,6,8.139009597891133e-12,True,0,25000,150000,47160.0,presupuesto
+rosenbrock,3,GD paso fijo,7,5.647220310818733e-12,True,0,25000,150000,44850.0,presupuesto
+rosenbrock,3,GD paso fijo,8,5.3628453462742946e-12,True,0,25000,150000,44526.0,presupuesto
+rosenbrock,3,GD paso fijo,9,7.753204623872984e-12,True,0,25000,150000,46854.0,presupuesto
+rosenbrock,3,GD paso fijo,10,5.763955658430219e-12,True,0,25000,150000,44982.0,presupuesto
+rosenbrock,3,GD paso fijo,11,5.167264078317449e-12,True,0,25000,150000,44292.0,presupuesto
+rosenbrock,3,GD paso fijo,12,6.291532569046018e-12,True,0,25000,150000,45534.0,presupuesto
+rosenbrock,3,GD paso fijo,13,1.051168861568473e-12,True,0,24638,147828,32070.0,gradiente
+rosenbrock,3,GD paso fijo,14,5.669382976783528e-12,True,0,25000,150000,44874.0,presupuesto
+rosenbrock,3,GD paso fijo,15,6.6306259398445236e-12,True,0,25000,150000,45864.0,presupuesto
+rosenbrock,3,GD paso fijo,16,5.85570852162025e-12,True,0,25000,150000,45078.0,presupuesto
+rosenbrock,3,GD paso fijo,17,5.813959889393049e-12,True,0,25000,150000,45036.0,presupuesto
+rosenbrock,3,GD paso fijo,18,6.8387074571197966e-12,True,0,25000,150000,46062.0,presupuesto
+rosenbrock,3,GD paso fijo,19,4.939413083193508e-12,True,0,25000,150000,44004.0,presupuesto
+rosenbrock,3,GD paso fijo,20,2.208156678065499e-11,True,0,25000,150000,53460.0,presupuesto
+rosenbrock,3,GD paso fijo,21,6.6372191339711604e-12,True,0,25000,150000,45870.0,presupuesto
+rosenbrock,3,GD paso fijo,22,4.191232152512589e-12,True,0,25000,150000,42972.0,presupuesto
+rosenbrock,3,GD paso fijo,23,5.639404927214381e-12,True,0,25000,150000,44844.0,presupuesto
+rosenbrock,3,GD paso fijo,24,5.49457261938673e-12,True,0,25000,150000,44676.0,presupuesto
+rosenbrock,3,GD paso fijo,25,1.0503028286402727e-12,True,0,22546,135276,19134.0,gradiente
+rosenbrock,3,GD paso fijo,26,6.324691598642186e-11,True,0,25000,150000,60102.0,presupuesto
+rosenbrock,3,GD paso fijo,27,9.502628732721614e-12,True,0,25000,150000,48138.0,presupuesto
+rosenbrock,3,GD paso fijo,28,6.51471608706371e-12,True,0,25000,150000,45756.0,presupuesto
+rosenbrock,3,GD paso fijo,29,5.471124935019428e-12,True,0,25000,150000,44652.0,presupuesto
+rosenbrock,3,GD backtracking,0,7.236269392040067e-13,True,32854,16423,131392,32832.0,gradiente
+rosenbrock,3,GD backtracking,1,7.236269392040067e-13,True,32854,16423,131392,32832.0,gradiente
+rosenbrock,3,GD backtracking,2,7.134038576340425e-13,True,32517,16254,130041,31914.0,gradiente
+rosenbrock,3,GD backtracking,3,7.397384006330431e-13,True,32481,16236,129897,31970.0,gradiente
+rosenbrock,3,GD backtracking,4,7.107964233530394e-13,True,32569,16280,130249,32105.0,gradiente
+rosenbrock,3,GD backtracking,5,7.452111208680763e-13,True,32481,16236,129897,32001.0,gradiente
+rosenbrock,3,GD backtracking,6,7.430416247015192e-13,True,32507,16249,130001,32098.0,gradiente
+rosenbrock,3,GD backtracking,7,7.506149144797298e-13,True,34961,17476,139817,41962.0,gradiente
+rosenbrock,3,GD backtracking,8,7.47647726048254e-13,True,32487,16239,129921,32042.0,gradiente
+rosenbrock,3,GD backtracking,9,7.298327101718808e-13,True,32639,16315,130529,32521.0,gradiente
+rosenbrock,3,GD backtracking,10,7.256789476474161e-13,True,34360,17176,137416,39384.0,gradiente
+rosenbrock,3,GD backtracking,11,7.256789476474161e-13,True,34360,17176,137416,39384.0,gradiente
+rosenbrock,3,GD backtracking,12,7.222834244520594e-13,True,32541,16266,130137,32081.0,gradiente
+rosenbrock,3,GD backtracking,13,7.478438703997719e-13,True,35917,17954,143641,45257.0,gradiente
+rosenbrock,3,GD backtracking,14,7.425091689672149e-13,True,32509,16250,130009,32097.0,gradiente
+rosenbrock,3,GD backtracking,15,7.243057785285681e-13,True,34641,17316,138537,40498.0,gradiente
+rosenbrock,3,GD backtracking,16,7.208855094387084e-13,True,32537,16264,130121,32058.0,gradiente
+rosenbrock,3,GD backtracking,17,7.133977468322398e-13,True,32559,16275,130209,32082.0,gradiente
+rosenbrock,3,GD backtracking,18,7.300744954860384e-13,True,32519,16255,130049,32049.0,gradiente
+rosenbrock,3,GD backtracking,19,7.389569108031187e-13,True,32509,16250,130009,32073.0,gradiente
+rosenbrock,3,GD backtracking,20,7.550431540476821e-13,True,32581,16286,130297,32473.0,gradiente
+rosenbrock,3,GD backtracking,21,7.278190111506208e-13,True,32539,16265,130129,32114.0,gradiente
+rosenbrock,3,GD backtracking,22,7.507561250566776e-13,True,32611,16301,130417,32562.0,gradiente
+rosenbrock,3,GD backtracking,23,7.427058367116336e-13,True,32433,16212,129705,31793.0,gradiente
+rosenbrock,3,GD backtracking,24,7.453933493324686e-13,True,32299,16145,129169,31273.0,gradiente
+rosenbrock,3,GD backtracking,25,7.134134630967643e-13,True,28675,14333,114673,16041.0,gradiente
+rosenbrock,3,GD backtracking,26,7.193393030030108e-13,True,33781,16886,135097,37017.0,gradiente
+rosenbrock,3,GD backtracking,27,7.401752715067763e-13,True,32489,16240,129929,32002.0,gradiente
+rosenbrock,3,GD backtracking,28,7.474502640359048e-13,True,32535,16263,130113,32234.0,gradiente
+rosenbrock,3,GD backtracking,29,7.236269392040067e-13,True,32854,16423,131392,32832.0,gradiente
+rosenbrock,3,GA,0,0.015290123445425094,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,1,0.003907969014945109,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,2,0.002275020475442702,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,3,0.03922062656054757,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,4,0.0034169447985991984,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,5,0.01567825874845456,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,6,0.0001440600602662822,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,7,0.018560321529832755,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,8,0.024629018607616418,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,9,0.012146315311225554,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,10,0.00012774200037587416,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,11,0.0293308129821797,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,12,0.000505640400739082,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,13,0.02856771068212781,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,14,0.008996824881242085,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,15,0.007723316805809829,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,16,0.003999445661550853,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,17,0.0034170460728335066,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,18,1.9015291278654442e-05,True,149964,0,149964,104010.0,presupuesto
+rosenbrock,3,GA,19,5.169924432989649e-05,True,149964,0,149964,85326.0,presupuesto
+rosenbrock,3,GA,20,0.006107849732267788,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,21,0.021597381104684142,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,22,0.008151787176054266,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,23,0.013460558054758263,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,24,0.018972777505916357,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,25,0.0005646224225355182,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,26,0.00040494698222658825,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,27,0.015394018077565973,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,28,0.021099867283376532,False,149964,0,149964,,presupuesto
+rosenbrock,3,GA,29,0.014969213341705997,False,149964,0,149964,,presupuesto
+rosenbrock,3,PSO,0,2.3186433753653512e-11,True,114600,0,114600,37860.0,estancamiento
+rosenbrock,3,PSO,1,2.7541002614781546e-11,True,99300,0,99300,18900.0,estancamiento
+rosenbrock,3,PSO,2,7.303842271535963e-11,True,87960,0,87960,14760.0,estancamiento
+rosenbrock,3,PSO,3,5.412549887352402e-11,True,101100,0,101100,29460.0,estancamiento
+rosenbrock,3,PSO,4,7.168686188144134e-11,True,105480,0,105480,33960.0,estancamiento
+rosenbrock,3,PSO,5,1.0036358946358079e-11,True,98520,0,98520,32400.0,estancamiento
+rosenbrock,3,PSO,6,4.9080786522437395e-11,True,80820,0,80820,29880.0,estancamiento
+rosenbrock,3,PSO,7,1.3862014748248951e-12,True,85440,0,85440,31800.0,estancamiento
+rosenbrock,3,PSO,8,5.925248124876346e-11,True,95940,0,95940,25860.0,estancamiento
+rosenbrock,3,PSO,9,2.303500124548633e-11,True,110340,0,110340,24000.0,estancamiento
+rosenbrock,3,PSO,10,1.7190772698543779e-10,True,89880,0,89880,25260.0,estancamiento
+rosenbrock,3,PSO,11,2.8800171690950924e-11,True,87060,0,87060,23820.0,estancamiento
+rosenbrock,3,PSO,12,3.532947500955803e-11,True,100500,0,100500,25320.0,estancamiento
+rosenbrock,3,PSO,13,1.7877254404946443e-12,True,106920,0,106920,26640.0,estancamiento
+rosenbrock,3,PSO,14,1.3121640671116507e-11,True,111540,0,111540,35160.0,estancamiento
+rosenbrock,3,PSO,15,4.5548710448457803e-11,True,106620,0,106620,28080.0,estancamiento
+rosenbrock,3,PSO,16,1.4609837156740643e-11,True,115500,0,115500,32460.0,estancamiento
+rosenbrock,3,PSO,17,2.0336488026914796e-11,True,104640,0,104640,21540.0,estancamiento
+rosenbrock,3,PSO,18,1.3708604487402096e-10,True,79680,0,79680,23400.0,estancamiento
+rosenbrock,3,PSO,19,1.5880013218389817e-11,True,65580,0,65580,3120.0,estancamiento
+rosenbrock,3,PSO,20,5.974454703707135e-11,True,104100,0,104100,21240.0,estancamiento
+rosenbrock,3,PSO,21,3.441778693244153e-11,True,103260,0,103260,28740.0,estancamiento
+rosenbrock,3,PSO,22,5.641019314975119e-11,True,97680,0,97680,26160.0,estancamiento
+rosenbrock,3,PSO,23,1.956510943019281e-10,True,100440,0,100440,29820.0,estancamiento
+rosenbrock,3,PSO,24,9.009698957337257e-12,True,87960,0,87960,25200.0,estancamiento
+rosenbrock,3,PSO,25,9.829471392317525e-12,True,97200,0,97200,32820.0,estancamiento
+rosenbrock,3,PSO,26,9.442976921305296e-12,True,65580,0,65580,10320.0,estancamiento
+rosenbrock,3,PSO,27,4.120735599687125e-11,True,124320,0,124320,36660.0,estancamiento
+rosenbrock,3,PSO,28,6.6602640985856e-11,True,66900,0,66900,14520.0,estancamiento
+rosenbrock,3,PSO,29,2.8463659778722983e-11,True,95040,0,95040,21420.0,estancamiento
+rosenbrock,3,DE,0,1.0503535953718465e-22,True,12180,0,12180,3900.0,estancamiento
+rosenbrock,3,DE,1,1.193210526901241e-22,True,11880,0,11880,3180.0,estancamiento
+rosenbrock,3,DE,2,1.4156328013329627e-23,True,12600,0,12600,3720.0,estancamiento
+rosenbrock,3,DE,3,1.659811455239466e-23,True,15960,0,15960,6600.0,estancamiento
+rosenbrock,3,DE,4,7.061525466097166e-22,True,12060,0,12060,3240.0,estancamiento
+rosenbrock,3,DE,5,1.8022679856252736e-24,True,12180,0,12180,3000.0,estancamiento
+rosenbrock,3,DE,6,3.61653110421326e-23,True,13380,0,13380,4500.0,estancamiento
+rosenbrock,3,DE,7,4.378646225249816e-23,True,12780,0,12780,4140.0,estancamiento
+rosenbrock,3,DE,8,5.1426783127987236e-24,True,15000,0,15000,6180.0,estancamiento
+rosenbrock,3,DE,9,1.3323451627825677e-23,True,12300,0,12300,3420.0,estancamiento
+rosenbrock,3,DE,10,5.1542847863193854e-24,True,12720,0,12720,3960.0,estancamiento
+rosenbrock,3,DE,11,4.024542527003483e-23,True,12420,0,12420,3240.0,estancamiento
+rosenbrock,3,DE,12,0.00010505873201317915,False,52020,0,52020,,estancamiento
+rosenbrock,3,DE,13,1.7860920412275759e-22,True,12360,0,12360,3660.0,estancamiento
+rosenbrock,3,DE,14,0.102832287720443,False,47220,0,47220,,estancamiento
+rosenbrock,3,DE,15,8.248698774916688e-23,True,12660,0,12660,3960.0,estancamiento
+rosenbrock,3,DE,16,1.3394102639120805e-23,True,13320,0,13320,4440.0,estancamiento
+rosenbrock,3,DE,17,1.8086837667155328e-24,True,12780,0,12780,3360.0,estancamiento
+rosenbrock,3,DE,18,2.8682738459993436e-24,True,13020,0,13020,3840.0,estancamiento
+rosenbrock,3,DE,19,3.222078800155679e-23,True,12120,0,12120,3420.0,estancamiento
+rosenbrock,3,DE,20,2.2731375685115466e-24,True,12420,0,12420,3240.0,estancamiento
+rosenbrock,3,DE,21,8.756606757809672e-24,True,12900,0,12900,3960.0,estancamiento
+rosenbrock,3,DE,22,5.26778733335332e-23,True,12840,0,12840,3960.0,estancamiento
+rosenbrock,3,DE,23,5.241411256227667e-25,True,12600,0,12600,3540.0,estancamiento
+rosenbrock,3,DE,24,1.4908735347971585e-23,True,12360,0,12360,3660.0,estancamiento
+rosenbrock,3,DE,25,5.310485731468901e-23,True,12540,0,12540,3660.0,estancamiento
+rosenbrock,3,DE,26,8.398830067721847e-23,True,11760,0,11760,3120.0,estancamiento
+rosenbrock,3,DE,27,9.827642100725187e-23,True,11640,0,11640,2580.0,estancamiento
+rosenbrock,3,DE,28,1.8964701002821044e-22,True,12420,0,12420,3480.0,estancamiento
+rosenbrock,3,DE,29,1.8030332842413318e-23,True,14940,0,14940,6360.0,estancamiento
+rastrigin,2,GD paso fijo,0,17.909202482974024,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,1,33.828324176029234,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,2,8.954601241487012,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,3,9.949560298580305,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,4,4.974790247647377,False,0,10,40,,gradiente
+rastrigin,2,GD paso fijo,5,4.97479024764738,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,6,24.87384503394854,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,7,1.9899181141865832,False,0,9,36,,gradiente
+rastrigin,2,GD paso fijo,8,9.949560298580302,False,0,7,28,,gradiente
+rastrigin,2,GD paso fijo,9,15.919243792461533,False,0,12,48,,gradiente
+rastrigin,2,GD paso fijo,10,9.949560298580304,False,0,10,40,,gradiente
+rastrigin,2,GD paso fijo,11,28.853554125096316,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,12,9.949560298580304,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,13,28.853554125096316,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,14,4.97479024764738,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,15,15.91924379246153,False,0,9,36,,gradiente
+rastrigin,2,GD paso fijo,16,0.9949590570932934,False,0,7,28,,gradiente
+rastrigin,2,GD paso fijo,17,4.974790247647379,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,18,9.949560298580302,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,19,40.79296672700376,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,20,19.899074983015616,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,21,4.974790247647377,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,22,3.979831190554087,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,23,16.914202849554822,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,24,8.954601241487012,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,25,19.899074983015616,False,0,6,24,,gradiente
+rastrigin,2,GD paso fijo,26,9.949560298580302,False,0,5,20,,gradiente
+rastrigin,2,GD paso fijo,27,9.949560298580302,False,0,8,32,,gradiente
+rastrigin,2,GD paso fijo,28,17.909202482974024,False,0,11,44,,gradiente
+rastrigin,2,GD paso fijo,29,24.873845033948548,False,0,8,32,,gradiente
+rastrigin,2,GD backtracking,0,17.909202482974024,False,67,30,187,,gradiente
+rastrigin,2,GD backtracking,1,24.873722934542222,False,79,31,203,,gradiente
+rastrigin,2,GD backtracking,2,8.95460124148701,False,68,30,188,,gradiente
+rastrigin,2,GD backtracking,3,12.934432432041099,False,71,31,195,,gradiente
+rastrigin,2,GD backtracking,4,7.959662381108176,False,70,31,194,,gradiente
+rastrigin,2,GD backtracking,5,4.97479024764738,False,69,31,193,,gradiente
+rastrigin,2,GD backtracking,6,9.949560298580304,False,74,33,206,,gradiente
+rastrigin,2,GD backtracking,7,17.909202482974024,False,76,34,212,,gradiente
+rastrigin,2,GD backtracking,8,3.979831190554087,False,70,31,194,,gradiente
+rastrigin,2,GD backtracking,9,15.919243792461533,False,74,33,206,,gradiente
+rastrigin,2,GD backtracking,10,1.9899181141865832,False,68,30,188,,gradiente
+rastrigin,2,GD backtracking,11,25.868681991635512,False,75,31,199,,gradiente
+rastrigin,2,GD backtracking,12,1.9899181141865867,False,71,32,199,,gradiente
+rastrigin,2,GD backtracking,13,4.97479024764738,False,74,33,206,,gradiente
+rastrigin,2,GD backtracking,14,4.97479024764738,False,69,31,193,,gradiente
+rastrigin,2,GD backtracking,15,0.9949590570932898,False,78,35,218,,gradiente
+rastrigin,2,GD backtracking,16,0.9949590570932898,False,70,31,194,,gradiente
+rastrigin,2,GD backtracking,17,7.959662381108176,False,72,32,200,,gradiente
+rastrigin,2,GD backtracking,18,9.949560298580304,False,68,30,188,,gradiente
+rastrigin,2,GD backtracking,19,28.85355412509631,False,80,32,208,,gradiente
+rastrigin,2,GD backtracking,20,19.899074983015616,False,68,30,188,,gradiente
+rastrigin,2,GD backtracking,21,0.9949590570932898,False,74,33,206,,gradiente
+rastrigin,2,GD backtracking,22,3.979831190554087,False,69,31,193,,gradiente
+rastrigin,2,GD backtracking,23,19.89907498301562,False,73,32,201,,gradiente
+rastrigin,2,GD backtracking,24,8.95460124148701,False,74,32,202,,gradiente
+rastrigin,2,GD backtracking,25,19.899074983015623,False,67,30,187,,gradiente
+rastrigin,2,GD backtracking,26,9.949560298580305,False,66,29,182,,gradiente
+rastrigin,2,GD backtracking,27,9.949560298580304,False,70,31,194,,gradiente
+rastrigin,2,GD backtracking,28,31.838487584923065,False,71,32,199,,gradiente
+rastrigin,2,GD backtracking,29,4.97479024764738,False,75,34,211,,gradiente
+rastrigin,2,GA,0,2.396589593445242e-10,True,6988,0,6988,2164.0,estancamiento
+rastrigin,2,GA,1,0.0,True,6268,0,6268,1120.0,estancamiento
+rastrigin,2,GA,2,0.0,True,5476,0,5476,1156.0,estancamiento
+rastrigin,2,GA,3,1.683300254740061e-08,True,6880,0,6880,1192.0,estancamiento
+rastrigin,2,GA,4,1.0516032489249483e-11,True,5728,0,5728,976.0,estancamiento
+rastrigin,2,GA,5,2.1358731316922785e-07,True,6160,0,6160,1084.0,estancamiento
+rastrigin,2,GA,6,0.0,True,9004,0,9004,832.0,estancamiento
+rastrigin,2,GA,7,7.105427357601002e-15,True,7816,0,7816,1084.0,estancamiento
+rastrigin,2,GA,8,0.0,True,7996,0,7996,796.0,estancamiento
+rastrigin,2,GA,9,9.310589632605115e-09,True,6880,0,6880,1840.0,estancamiento
+rastrigin,2,GA,10,1.4268408676798572e-10,True,6952,0,6952,796.0,estancamiento
+rastrigin,2,GA,11,5.2148472207136365e-09,True,9472,0,9472,904.0,estancamiento
+rastrigin,2,GA,12,0.0,True,5728,0,5728,1372.0,estancamiento
+rastrigin,2,GA,13,0.0,True,6196,0,6196,2272.0,estancamiento
+rastrigin,2,GA,14,0.0,True,5152,0,5152,508.0,estancamiento
+rastrigin,2,GA,15,0.0,True,6448,0,6448,1768.0,estancamiento
+rastrigin,2,GA,16,3.552713678800501e-15,True,5692,0,5692,1444.0,estancamiento
+rastrigin,2,GA,17,3.3224978324142285e-10,True,5188,0,5188,688.0,estancamiento
+rastrigin,2,GA,18,0.0,True,5080,0,5080,724.0,estancamiento
+rastrigin,2,GA,19,0.0,True,4972,0,4972,724.0,estancamiento
+rastrigin,2,GA,20,0.0,True,5260,0,5260,904.0,estancamiento
+rastrigin,2,GA,21,4.68247662865906e-12,True,6844,0,6844,688.0,estancamiento
+rastrigin,2,GA,22,0.0,True,4792,0,4792,544.0,estancamiento
+rastrigin,2,GA,23,3.552713678800501e-14,True,6880,0,6880,760.0,estancamiento
+rastrigin,2,GA,24,0.0,True,5404,0,5404,1012.0,estancamiento
+rastrigin,2,GA,25,0.0,True,5044,0,5044,832.0,estancamiento
+rastrigin,2,GA,26,6.0276121871538635e-09,True,6556,0,6556,1012.0,estancamiento
+rastrigin,2,GA,27,2.8922642059114878e-11,True,5476,0,5476,1192.0,estancamiento
+rastrigin,2,GA,28,0.0,True,5116,0,5116,832.0,estancamiento
+rastrigin,2,GA,29,0.0,True,5512,0,5512,1480.0,estancamiento
+rastrigin,2,PSO,0,0.0,True,8560,0,8560,2160.0,estancamiento
+rastrigin,2,PSO,1,0.0,True,9280,0,9280,2240.0,estancamiento
+rastrigin,2,PSO,2,0.0,True,8840,0,8840,2160.0,estancamiento
+rastrigin,2,PSO,3,0.0,True,10520,0,10520,2960.0,estancamiento
+rastrigin,2,PSO,4,0.0,True,8800,0,8800,1600.0,estancamiento
+rastrigin,2,PSO,5,0.0,True,8840,0,8840,1720.0,estancamiento
+rastrigin,2,PSO,6,0.0,True,7800,0,7800,1520.0,estancamiento
+rastrigin,2,PSO,7,0.0,True,8720,0,8720,1480.0,estancamiento
+rastrigin,2,PSO,8,0.0,True,9000,0,9000,3120.0,estancamiento
+rastrigin,2,PSO,9,0.0,True,8800,0,8800,2200.0,estancamiento
+rastrigin,2,PSO,10,0.0,True,8680,0,8680,2040.0,estancamiento
+rastrigin,2,PSO,11,0.0,True,9480,0,9480,1760.0,estancamiento
+rastrigin,2,PSO,12,0.0,True,8480,0,8480,1880.0,estancamiento
+rastrigin,2,PSO,13,0.0,True,8720,0,8720,2000.0,estancamiento
+rastrigin,2,PSO,14,0.0,True,8640,0,8640,2560.0,estancamiento
+rastrigin,2,PSO,15,0.0,True,9360,0,9360,3080.0,estancamiento
+rastrigin,2,PSO,16,0.0,True,8760,0,8760,2080.0,estancamiento
+rastrigin,2,PSO,17,0.0,True,9400,0,9400,1320.0,estancamiento
+rastrigin,2,PSO,18,0.0,True,10120,0,10120,3320.0,estancamiento
+rastrigin,2,PSO,19,0.0,True,9400,0,9400,2240.0,estancamiento
+rastrigin,2,PSO,20,0.0,True,8560,0,8560,2120.0,estancamiento
+rastrigin,2,PSO,21,0.0,True,9400,0,9400,2440.0,estancamiento
+rastrigin,2,PSO,22,0.0,True,8800,0,8800,2080.0,estancamiento
+rastrigin,2,PSO,23,0.0,True,8680,0,8680,2680.0,estancamiento
+rastrigin,2,PSO,24,0.0,True,8680,0,8680,1840.0,estancamiento
+rastrigin,2,PSO,25,0.0,True,8000,0,8000,1320.0,estancamiento
+rastrigin,2,PSO,26,0.0,True,9000,0,9000,2520.0,estancamiento
+rastrigin,2,PSO,27,0.0,True,8120,0,8120,1640.0,estancamiento
+rastrigin,2,PSO,28,0.0,True,9400,0,9400,2360.0,estancamiento
+rastrigin,2,PSO,29,0.0,True,9080,0,9080,1600.0,estancamiento
+rastrigin,2,DE,0,0.0,True,7000,0,7000,2040.0,estancamiento
+rastrigin,2,DE,1,0.0,True,7080,0,7080,2000.0,estancamiento
+rastrigin,2,DE,2,0.0,True,7200,0,7200,2120.0,estancamiento
+rastrigin,2,DE,3,0.0,True,7600,0,7600,2120.0,estancamiento
+rastrigin,2,DE,4,0.0,True,7160,0,7160,1640.0,estancamiento
+rastrigin,2,DE,5,0.0,True,7760,0,7760,2440.0,estancamiento
+rastrigin,2,DE,6,0.0,True,7280,0,7280,2280.0,estancamiento
+rastrigin,2,DE,7,0.0,True,7360,0,7360,2240.0,estancamiento
+rastrigin,2,DE,8,0.0,True,7600,0,7600,2600.0,estancamiento
+rastrigin,2,DE,9,0.0,True,7080,0,7080,1920.0,estancamiento
+rastrigin,2,DE,10,0.0,True,7280,0,7280,2200.0,estancamiento
+rastrigin,2,DE,11,0.0,True,7120,0,7120,2040.0,estancamiento
+rastrigin,2,DE,12,0.0,True,7360,0,7360,2320.0,estancamiento
+rastrigin,2,DE,13,0.0,True,7280,0,7280,1760.0,estancamiento
+rastrigin,2,DE,14,0.0,True,7480,0,7480,2320.0,estancamiento
+rastrigin,2,DE,15,0.0,True,7480,0,7480,2400.0,estancamiento
+rastrigin,2,DE,16,0.0,True,6960,0,6960,2160.0,estancamiento
+rastrigin,2,DE,17,0.0,True,7040,0,7040,1880.0,estancamiento
+rastrigin,2,DE,18,0.0,True,6880,0,6880,1920.0,estancamiento
+rastrigin,2,DE,19,0.0,True,7640,0,7640,2440.0,estancamiento
+rastrigin,2,DE,20,0.0,True,7240,0,7240,2120.0,estancamiento
+rastrigin,2,DE,21,0.0,True,7160,0,7160,1960.0,estancamiento
+rastrigin,2,DE,22,0.0,True,7120,0,7120,2320.0,estancamiento
+rastrigin,2,DE,23,0.0,True,7040,0,7040,2320.0,estancamiento
+rastrigin,2,DE,24,0.0,True,7080,0,7080,2080.0,estancamiento
+rastrigin,2,DE,25,0.0,True,7280,0,7280,1680.0,estancamiento
+rastrigin,2,DE,26,0.0,True,7240,0,7240,1800.0,estancamiento
+rastrigin,2,DE,27,0.0,True,7160,0,7160,1680.0,estancamiento
+rastrigin,2,DE,28,0.0,True,7320,0,7320,2160.0,estancamiento
+rastrigin,2,DE,29,0.0,True,7280,0,7280,1960.0,estancamiento
+rastrigin,3,GD paso fijo,0,33.82844627543556,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,1,42.782925417516246,False,0,6,36,,gradiente
+rastrigin,3,GD paso fijo,2,9.949560298580302,False,0,6,36,,gradiente
+rastrigin,3,GD paso fijo,3,25.868804091041838,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,4,8.954621438201464,False,0,10,60,,gradiente
+rastrigin,3,GD paso fijo,5,13.929391489134389,False,0,7,42,,gradiente
+rastrigin,3,GD paso fijo,6,40.79308882641008,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,7,26.863641048728812,False,0,9,54,,gradiente
+rastrigin,3,GD paso fijo,8,25.868804091041834,False,0,10,60,,gradiente
+rastrigin,3,GD paso fijo,9,31.838487584923065,False,0,12,72,,gradiente
+rastrigin,3,GD paso fijo,10,13.929391489134389,False,0,10,60,,gradiente
+rastrigin,3,GD paso fijo,11,29.848513182189606,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,12,9.949560298580302,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,13,44.772797917557845,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,14,8.954621438201467,False,0,9,54,,gradiente
+rastrigin,3,GD paso fijo,15,24.87384503394854,False,0,9,54,,gradiente
+rastrigin,3,GD paso fijo,16,1.9899181141865867,False,0,7,42,,gradiente
+rastrigin,3,GD paso fijo,17,29.848513182189606,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,18,9.949560298580302,False,0,7,42,,gradiente
+rastrigin,3,GD paso fijo,19,44.772797917557845,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,20,23.87890617356971,False,0,9,54,,gradiente
+rastrigin,3,GD paso fijo,21,20.894034040108906,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,22,12.934432432041099,False,0,6,36,,gradiente
+rastrigin,3,GD paso fijo,23,20.89403404010891,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,24,17.909202482974024,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,25,35.81831877547715,False,0,10,60,,gradiente
+rastrigin,3,GD paso fijo,26,34.82328323312253,False,0,5,30,,gradiente
+rastrigin,3,GD paso fijo,27,13.929391489134389,False,0,8,48,,gradiente
+rastrigin,3,GD paso fijo,28,21.88903367352811,False,0,11,66,,gradiente
+rastrigin,3,GD paso fijo,29,25.86880409104183,False,0,9,54,,gradiente
+rastrigin,3,GD backtracking,0,33.82844627543555,False,72,32,264,,gradiente
+rastrigin,3,GD backtracking,1,42.78292541751625,False,68,30,248,,gradiente
+rastrigin,3,GD backtracking,2,9.949560298580302,False,70,31,256,,gradiente
+rastrigin,3,GD backtracking,3,12.934432432041099,False,72,32,264,,gradiente
+rastrigin,3,GD backtracking,4,11.939493571662268,False,72,32,264,,gradiente
+rastrigin,3,GD backtracking,5,13.929391489134389,False,74,33,272,,gradiente
+rastrigin,3,GD backtracking,6,5.969749304740674,False,75,34,279,,gradiente
+rastrigin,3,GD backtracking,7,29.848513182189606,False,76,34,280,,gradiente
+rastrigin,3,GD backtracking,8,20.894034040108913,False,75,34,279,,gradiente
+rastrigin,3,GD backtracking,9,42.78292541751625,False,79,36,295,,gradiente
+rastrigin,3,GD backtracking,10,8.954621438201471,False,75,34,279,,gradiente
+rastrigin,3,GD backtracking,11,23.878906173569703,False,74,33,272,,gradiente
+rastrigin,3,GD backtracking,12,8.954621438201464,False,73,32,265,,gradiente
+rastrigin,3,GD backtracking,13,42.78292541751625,False,77,35,287,,gradiente
+rastrigin,3,GD backtracking,14,12.934432432041099,False,69,31,255,,gradiente
+rastrigin,3,GD backtracking,15,13.929391489134389,False,76,34,280,,gradiente
+rastrigin,3,GD backtracking,16,1.9899181141865867,False,69,31,255,,gradiente
+rastrigin,3,GD backtracking,17,32.833385315650396,False,101,34,305,,gradiente
+rastrigin,3,GD backtracking,18,9.949560298580302,False,68,30,248,,gradiente
+rastrigin,3,GD backtracking,19,8.954621438201464,False,82,36,298,,gradiente
+rastrigin,3,GD backtracking,20,29.848513182189606,False,69,31,255,,gradiente
+rastrigin,3,GD backtracking,21,0.9949590570932898,False,72,32,264,,gradiente
+rastrigin,3,GD backtracking,22,12.934432432041099,False,69,31,255,,gradiente
+rastrigin,3,GD backtracking,23,20.89403404010891,False,72,32,264,,gradiente
+rastrigin,3,GD backtracking,24,17.909202482974024,False,70,31,256,,gradiente
+rastrigin,3,GD backtracking,25,33.82844627543555,False,69,31,255,,gradiente
+rastrigin,3,GD backtracking,26,34.82328323312253,False,67,29,241,,gradiente
+rastrigin,3,GD backtracking,27,13.929391489134392,False,70,31,256,,gradiente
+rastrigin,3,GD backtracking,28,26.863803724461036,False,71,32,263,,gradiente
+rastrigin,3,GD backtracking,29,42.78292541751625,False,77,35,287,,gradiente
+rastrigin,3,GA,0,7.737810392427491e-12,True,11616,0,11616,2436.0,estancamiento
+rastrigin,3,GA,1,0.0,True,13128,0,13128,2274.0,estancamiento
+rastrigin,3,GA,2,0.0,True,16854,0,16854,2436.0,estancamiento
+rastrigin,3,GA,3,0.0,True,10806,0,10806,2436.0,estancamiento
+rastrigin,3,GA,4,9.961809155356605e-11,True,22794,0,22794,1950.0,estancamiento
+rastrigin,3,GA,5,1.4210854715202004e-14,True,8592,0,8592,1842.0,estancamiento
+rastrigin,3,GA,6,4.857412250203197e-10,True,14316,0,14316,2652.0,estancamiento
+rastrigin,3,GA,7,0.0,True,10752,0,10752,2274.0,estancamiento
+rastrigin,3,GA,8,2.2382096176443156e-13,True,13938,0,13938,1842.0,estancamiento
+rastrigin,3,GA,9,5.684341886080802e-14,True,14154,0,14154,3030.0,estancamiento
+rastrigin,3,GA,10,0.0,True,10806,0,10806,3138.0,estancamiento
+rastrigin,3,GA,11,0.0,True,11670,0,11670,2706.0,estancamiento
+rastrigin,3,GA,12,7.105427357601002e-15,True,10374,0,10374,2436.0,estancamiento
+rastrigin,3,GA,13,0.0,True,12912,0,12912,1788.0,estancamiento
+rastrigin,3,GA,14,1.4210854715202004e-14,True,13722,0,13722,2328.0,estancamiento
+rastrigin,3,GA,15,8.171241461241152e-13,True,17664,0,17664,2058.0,estancamiento
+rastrigin,3,GA,16,3.552713678800501e-14,True,16260,0,16260,2598.0,estancamiento
+rastrigin,3,GA,17,0.0,True,10266,0,10266,1842.0,estancamiento
+rastrigin,3,GA,18,0.0,True,10914,0,10914,3300.0,estancamiento
+rastrigin,3,GA,19,2.1529444893531036e-12,True,12156,0,12156,2760.0,estancamiento
+rastrigin,3,GA,20,7.105427357601002e-15,True,12858,0,12858,1950.0,estancamiento
+rastrigin,3,GA,21,7.411671276713605e-11,True,11616,0,11616,3138.0,estancamiento
+rastrigin,3,GA,22,3.488764832582092e-12,True,10050,0,10050,2760.0,estancamiento
+rastrigin,3,GA,23,0.0,True,18204,0,18204,1950.0,estancamiento
+rastrigin,3,GA,24,0.0,True,11238,0,11238,3084.0,estancamiento
+rastrigin,3,GA,25,4.831690603168681e-13,True,15558,0,15558,2706.0,estancamiento
+rastrigin,3,GA,26,3.552713678800501e-14,True,11454,0,11454,3516.0,estancamiento
+rastrigin,3,GA,27,7.105427357601002e-15,True,12588,0,12588,2112.0,estancamiento
+rastrigin,3,GA,28,0.0,True,13830,0,13830,2220.0,estancamiento
+rastrigin,3,GA,29,0.0,True,13884,0,13884,2436.0,estancamiento
+rastrigin,3,PSO,0,0.0,True,13920,0,13920,3540.0,estancamiento
+rastrigin,3,PSO,1,0.0,True,14940,0,14940,4140.0,estancamiento
+rastrigin,3,PSO,2,0.0,True,22380,0,22380,11580.0,estancamiento
+rastrigin,3,PSO,3,0.0,True,14220,0,14220,4440.0,estancamiento
+rastrigin,3,PSO,4,0.0,True,17280,0,17280,5820.0,estancamiento
+rastrigin,3,PSO,5,0.0,True,14580,0,14580,4260.0,estancamiento
+rastrigin,3,PSO,6,0.0,True,16500,0,16500,6600.0,estancamiento
+rastrigin,3,PSO,7,0.0,True,14460,0,14460,3900.0,estancamiento
+rastrigin,3,PSO,8,0.0,True,15300,0,15300,3480.0,estancamiento
+rastrigin,3,PSO,9,0.0,True,14580,0,14580,3660.0,estancamiento
+rastrigin,3,PSO,10,0.0,True,16620,0,16620,6540.0,estancamiento
+rastrigin,3,PSO,11,0.0,True,15060,0,15060,5220.0,estancamiento
+rastrigin,3,PSO,12,0.0,True,17760,0,17760,7980.0,estancamiento
+rastrigin,3,PSO,13,0.0,True,15840,0,15840,6360.0,estancamiento
+rastrigin,3,PSO,14,0.0,True,18480,0,18480,7980.0,estancamiento
+rastrigin,3,PSO,15,0.0,True,15600,0,15600,4140.0,estancamiento
+rastrigin,3,PSO,16,0.0,True,14340,0,14340,5520.0,estancamiento
+rastrigin,3,PSO,17,0.0,True,16080,0,16080,4380.0,estancamiento
+rastrigin,3,PSO,18,0.0,True,16140,0,16140,5820.0,estancamiento
+rastrigin,3,PSO,19,0.0,True,15720,0,15720,5280.0,estancamiento
+rastrigin,3,PSO,20,0.0,True,17100,0,17100,7740.0,estancamiento
+rastrigin,3,PSO,21,0.0,True,14580,0,14580,3900.0,estancamiento
+rastrigin,3,PSO,22,0.0,True,14820,0,14820,4140.0,estancamiento
+rastrigin,3,PSO,23,0.0,True,15420,0,15420,4800.0,estancamiento
+rastrigin,3,PSO,24,0.0,True,17040,0,17040,6060.0,estancamiento
+rastrigin,3,PSO,25,0.0,True,16680,0,16680,6480.0,estancamiento
+rastrigin,3,PSO,26,0.0,True,14220,0,14220,4500.0,estancamiento
+rastrigin,3,PSO,27,0.0,True,13320,0,13320,3060.0,estancamiento
+rastrigin,3,PSO,28,0.0,True,16680,0,16680,6060.0,estancamiento
+rastrigin,3,PSO,29,0.0,True,14220,0,14220,4380.0,estancamiento
+rastrigin,3,DE,0,0.0,True,14880,0,14880,6180.0,estancamiento
+rastrigin,3,DE,1,0.0,True,13980,0,13980,5700.0,estancamiento
+rastrigin,3,DE,2,0.0,True,15420,0,15420,6900.0,estancamiento
+rastrigin,3,DE,3,0.0,True,13680,0,13680,5040.0,estancamiento
+rastrigin,3,DE,4,0.0,True,16440,0,16440,7500.0,estancamiento
+rastrigin,3,DE,5,0.0,True,15900,0,15900,7440.0,estancamiento
+rastrigin,3,DE,6,0.0,True,14640,0,14640,6240.0,estancamiento
+rastrigin,3,DE,7,0.0,True,15420,0,15420,6360.0,estancamiento
+rastrigin,3,DE,8,0.0,True,15420,0,15420,7020.0,estancamiento
+rastrigin,3,DE,9,0.0,True,15960,0,15960,7440.0,estancamiento
+rastrigin,3,DE,10,0.0,True,15780,0,15780,7080.0,estancamiento
+rastrigin,3,DE,11,0.0,True,15240,0,15240,6480.0,estancamiento
+rastrigin,3,DE,12,0.0,True,15240,0,15240,6900.0,estancamiento
+rastrigin,3,DE,13,0.0,True,15240,0,15240,6300.0,estancamiento
+rastrigin,3,DE,14,0.0,True,16440,0,16440,7800.0,estancamiento
+rastrigin,3,DE,15,0.0,True,15780,0,15780,7440.0,estancamiento
+rastrigin,3,DE,16,0.0,True,15840,0,15840,7020.0,estancamiento
+rastrigin,3,DE,17,0.0,True,15060,0,15060,6300.0,estancamiento
+rastrigin,3,DE,18,0.0,True,14520,0,14520,5940.0,estancamiento
+rastrigin,3,DE,19,0.0,True,15240,0,15240,6780.0,estancamiento
+rastrigin,3,DE,20,0.0,True,16260,0,16260,7500.0,estancamiento
+rastrigin,3,DE,21,0.0,True,16020,0,16020,7440.0,estancamiento
+rastrigin,3,DE,22,0.0,True,15780,0,15780,7500.0,estancamiento
+rastrigin,3,DE,23,0.0,True,14880,0,14880,6660.0,estancamiento
+rastrigin,3,DE,24,0.0,True,14580,0,14580,6120.0,estancamiento
+rastrigin,3,DE,25,0.0,True,15300,0,15300,6660.0,estancamiento
+rastrigin,3,DE,26,0.0,True,17160,0,17160,7980.0,estancamiento
+rastrigin,3,DE,27,0.0,True,16140,0,16140,7320.0,estancamiento
+rastrigin,3,DE,28,0.0,True,15480,0,15480,6360.0,estancamiento
+rastrigin,3,DE,29,0.0,True,16260,0,16260,7620.0,estancamiento

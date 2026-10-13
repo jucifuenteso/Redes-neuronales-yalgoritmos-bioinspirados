@@ -1,0 +1,68 @@
+# Configuracion del experimento - Parte 1: optimizacion numerica de funciones de prueba
+# Todos los parametros se pueden cambiar aqui, sin editar el codigo fuente.
+
+semilla: 1983            # la corrida r usa la semilla (semilla + r) en todos los metodos
+n_corridas: 30           # corridas independientes por configuracion
+
+funciones: [rosenbrock, rastrigin]
+dimensiones: [2, 3]
+
+# Presupuesto comun por corrida, en evaluaciones equivalentes de f:
+#   evals_equivalentes = n_f + 2n * n_grad      (n = dimension)
+#   presupuesto        = presupuesto_por_dim * n
+presupuesto_por_dim: 50000
+
+# Una corrida es exitosa si f(x_final) - f* <= umbral_exito
+umbral_exito: 1.0e-4
+
+# Tamano de poblacion / enjambre de los tres heuristicos = pob_por_dim * n
+pob_por_dim: 20
+
+gd_paso_fijo:
+  # alpha ~ 1/L, con L la mayor curvatura (norma de la Hessiana):
+  #   rosenbrock: L en el optimo ~ 1002 (2D)   -> 1/L ~ 1.0e-3
+  #   rastrigin:  L global = 2 + 40 pi^2 ~ 397 -> 1/L ~ 2.5e-3
+  paso:
+    rosenbrock: 1.0e-3
+    rastrigin: 2.5e-3
+  tol: 1.0e-6            # parada: norma del gradiente (proyectado) < tol
+
+gd_backtracking:
+  paso_max: 1.0
+  beta: 0.5
+  c1: 1.0e-4             # constante de Armijo
+  tol: 1.0e-6
+
+# Parada por estancamiento de los heuristicos: el mejor valor no mejora
+# mas de ftol durante `paciencia` generaciones / iteraciones seguidas.
+parada:
+  ftol: 1.0e-10
+  paciencia: 100
+
+ga:
+  prob_cruce: 0.9
+  prob_mutacion: 0.2     # por gen
+  sigma_mut: 0.1         # desviacion de la mutacion, como fraccion del ancho de D
+  alpha_blx: 0.5
+  elite_frac: 0.1
+  tam_torneo: 3
+
+pso:
+  w: 0.729               # constriccion de Clerc y Kennedy (2002)
+  c1: 1.494
+  c2: 1.494
+  k_vmax: 0.5            # v_max = k (x_max - x_min) / 2
+
+de:
+  F: 0.5
+  CR: 0.9
+
+# Experimento complementario: muchas corridas cortas de descenso por
+# gradiente en Rastrigin para estimar la probabilidad de que un punto
+# inicial aleatorio caiga en la cuenca del minimo global.
+cuenca_rastrigin:
+  n_corridas: 10000
+
+gif:
+  n_cuadros: 60
+  fps: 10

@@ -1,0 +1,5 @@
+n,metodo,n_corridas,exitos,prob_exito,evals_equiv_por_corrida,evals_equiv_esperadas_con_reinicios
+2,GD paso fijo,10000,94,0.0094,32.1176,3416.765957446809
+2,GD backtracking,10000,161,0.0161,250.8669,15581.7950310559
+3,GD paso fijo,10000,9,0.0009,51.3858,57095.333333333336
+3,GD backtracking,10000,14,0.0014,646.2274,461591.0
