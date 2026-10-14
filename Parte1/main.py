@@ -18,7 +18,9 @@ from funciones import Problema
 from experimentos import METODOS, correr, experimento, resumir, probabilidad_cuenca
 from visualizacion import graficar_convergencia, graficar_valores_finales, animar_optimizacion
 
-DIR_SALIDA = "resultados"
+# Rutas relativas a este archivo, para que funcione desde cualquier carpeta
+DIR_BASE = os.path.dirname(os.path.abspath(__file__))
+DIR_SALIDA = os.path.join(DIR_BASE, "resultados")
 
 
 def miles(valor):
@@ -45,7 +47,7 @@ def tabla_markdown(estadisticas):
 
 
 def main():
-    with open("config.yaml", "r", encoding="utf-8") as f:
+    with open(os.path.join(DIR_BASE, "config.yaml"), "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     os.makedirs(DIR_SALIDA, exist_ok=True)
 
