@@ -97,10 +97,10 @@ def main():
     # ---------------------------------------------------------------------------
     file_coords = "coordenadas_47_ciudades.csv"
     if os.path.exists(file_coords):
-        print(f"✔ [{file_coords}] ya existe en local. Cargando datos...")
+        print(f" [{file_coords}] ya existe en local. Cargando datos...")
         df_coordenadas = pd.read_csv(file_coords)
     else:
-        print("⏳ Consultando Nominatim API para obtener coordenadas de las 47 ciudades...")
+        print(" Consultando Nominatim API para obtener coordenadas de las 47 ciudades...")
         headers = {'User-Agent': 'ProyectoRedesNeuronalesACO/1.0'}
         for c in capitales_info:
             url = f"https://nominatim.openstreetmap.org/search?city={c['ciudad']}&country=Spain&format=json"
@@ -112,7 +112,7 @@ def main():
 
         df_coordenadas = pd.DataFrame(capitales_info)
         df_coordenadas.to_csv(file_coords, index=False)
-        print(f"✔ Archivo '{file_coords}' generado con éxito.\n")
+        print(f" Archivo '{file_coords}' generado con éxito.\n")
 
     ciudades = df_coordenadas['ciudad'].tolist()
     n = len(ciudades)
@@ -124,11 +124,11 @@ def main():
     file_distancias = "matriz_distancias_47x47.csv"
 
     if os.path.exists(file_tiempos) and os.path.exists(file_distancias):
-        print(f"✔ [{file_tiempos}] y [{file_distancias}] ya existen en local. Cargando datos...")
+        print(f" [{file_tiempos}] y [{file_distancias}] ya existen en local. Cargando datos...")
         df_tiempos = pd.read_csv(file_tiempos, index_col=0)
         df_distancias = pd.read_csv(file_distancias, index_col=0)
     else:
-        print("⏳ Consultando OSRM Table API para generar matrices de tiempos y distancias...")
+        print(" Consultando OSRM Table API para generar matrices de tiempos y distancias...")
         coords_str = ";".join([f"{row['longitud']},{row['latitud']}" for _, row in df_coordenadas.iterrows()])
         
         # Pedimos simultáneamente 'duration' y 'distance'
@@ -142,7 +142,7 @@ def main():
             matriz_t_simetrica = (df_matriz_t.values + df_matriz_t.values.T) / 2.0
             df_tiempos = pd.DataFrame(np.round(matriz_t_simetrica, 2), index=ciudades, columns=ciudades)
             df_tiempos.to_csv(file_tiempos)
-            print(f"✔ Archivo '{file_tiempos}' (en horas) generado con éxito.")
+            print(f" Archivo '{file_tiempos}' (en horas) generado con éxito.")
 
             # --- Matriz de Distancias (convertir metros a kilómetros) ---
             matriz_km = np.round(np.array(res['distances']) / 1000.0, 1)
@@ -150,25 +150,25 @@ def main():
             matriz_d_simetrica = (df_matriz_d.values + df_matriz_d.values.T) / 2.0
             df_distancias = pd.DataFrame(np.round(matriz_d_simetrica, 1), index=ciudades, columns=ciudades)
             df_distancias.to_csv(file_distancias)
-            print(f"✔ Archivo '{file_distancias}' (en km) generado con éxito.\n")
+            print(f" Archivo '{file_distancias}' (en km) generado con éxito.\n")
         else:
-            print("❌ Error al consultar la API de OSRM.")
+            print(" Error al consultar la API de OSRM.")
 
     # ---------------------------------------------------------------------------
     # PASO 4: Matriz de Peajes (HERE Routing API)
     # ---------------------------------------------------------------------------
     file_peajes = "matriz_peajes_47x47.csv"
     if os.path.exists(file_peajes):
-        print(f"✔ [{file_peajes}] ya existe en local. Cargando datos...")
+        print(f" [{file_peajes}] ya existe en local. Cargando datos...")
         df_peajes = pd.read_csv(file_peajes, index_col=0)
     else:
         if not HERE_API_KEY or HERE_API_KEY == "tu_clave_secreta_aqui_sin_comillas":
-            print("⚠️ No se encontró una HERE_API_KEY válida en el archivo .env.")
+            print(" No se encontró una HERE_API_KEY válida en el archivo .env.")
             print("   Configura tu API Key en el .env antes de generar la matriz de peajes.")
             return
 
         total_peticiones = (n * (n - 1)) // 2  # 1,081 peticiones para 47 ciudades
-        print(f"⏳ Consultando HERE Routing API para generar matriz de peajes ({total_peticiones} trayectos)...")
+        print(f" Consultando HERE Routing API para generar matriz de peajes ({total_peticiones} trayectos)...")
         matriz_peajes = np.zeros((n, n))
 
         # Recorrer la mitad superior por simetría A -> B = B -> A
@@ -187,7 +187,7 @@ def main():
         df_peajes.to_csv(file_peajes)
         print(f"✔ Archivo '{file_peajes}' generado con éxito.\n")
 
-    print("\n🚀 Todos los datasets (47x47) están listos para el algoritmo ACO.")
+    print("\n Todos los datasets (47x47) están listos para el algoritmo ACO.")
 
 
 if __name__ == "__main__":
