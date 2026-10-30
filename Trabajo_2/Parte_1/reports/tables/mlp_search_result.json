@@ -1,0 +1,16 @@
+{
+  "n_configuraciones": 30,
+  "segundos_total": 119.73970699310303,
+  "mejor_config": {
+    "hidden": [
+      128
+    ],
+    "activation": "relu",
+    "dropout": 0.3,
+    "l2": 6.277730916958047e-05,
+    "optimizer": "adam",
+    "lr": 0.0004191980880805463,
+    "batch_size": 2048
+  },
+  "mejor_val_auc": 0.6706618960824042
+}

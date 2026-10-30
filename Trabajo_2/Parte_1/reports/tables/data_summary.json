@@ -1,0 +1,41 @@
+{
+  "archivo": "data/raw/loan.csv",
+  "fecha_descarga": "AAAA-MM-DD",
+  "registros_crudos": 887379,
+  "columnas_en_archivo": 74,
+  "columnas_usadas": 21,
+  "periodo_originacion": [
+    "2007-06-01",
+    "2015-12-01"
+  ],
+  "registros_sin_fecha": 0,
+  "registros_etiquetados": 268530,
+  "tasa_malos": 0.21904070308717835,
+  "conteo_loan_status": {
+    "Current": 601779,
+    "Fully Paid": 207723,
+    "Charged Off": 45248,
+    "Late (31-120 days)": 11591,
+    "Issued": 8460,
+    "In Grace Period": 6253,
+    "Late (16-30 days)": 2357,
+    "Does not meet the credit policy. Status:Fully Paid": 1988,
+    "Default": 1219,
+    "Does not meet the credit policy. Status:Charged Off": 761
+  },
+  "particiones": {
+    "train": {
+      "n": 90347,
+      "tasa_malos": 0.16302699591574707
+    },
+    "val": {
+      "n": 73194,
+      "tasa_malos": 0.22949968576659288
+    },
+    "test": {
+      "n": 104989,
+      "tasa_malos": 0.25995104249016565
+    }
+  },
+  "muestra_frac": 1.0
+}

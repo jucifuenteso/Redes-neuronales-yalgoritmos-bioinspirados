@@ -1,0 +1,25 @@
+{
+  "LR": {
+    "n_configuraciones": 7,
+    "segundos_busqueda": 2.00714111328125,
+    "n_params": 48
+  },
+  "MLP": {
+    "n_configuraciones": 30,
+    "segundos_busqueda": 119.73970699310303,
+    "segundos_corridas_finales": 471.6772475242615,
+    "n_semillas": 30,
+    "n_params": 6273,
+    "config": {
+      "hidden": [
+        128
+      ],
+      "activation": "relu",
+      "dropout": 0.3,
+      "l2": 6.277730916958047e-05,
+      "optimizer": "adam",
+      "lr": 0.0004191980880805463,
+      "batch_size": 2048
+    }
+  }
+}

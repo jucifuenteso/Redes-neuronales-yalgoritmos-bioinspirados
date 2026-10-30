@@ -1,0 +1,27 @@
+{
+  "mlp": {
+    "puntos_base": 538.5063336695799,
+    "corr_aditivo_vs_exacto": 0.9698884270418981,
+    "mae_puntos": 5.730154839664376,
+    "puntaje_exacto_min_max": [
+      452.13157155115886,
+      615.8354213166712
+    ]
+  },
+  "lr": {
+    "puntos_base": 539.2266669211351,
+    "corr_aditivo_vs_exacto": 0.9947292387628093,
+    "mae_puntos": 1.8528183540805616,
+    "puntaje_exacto_min_max": [
+      449.00120992309326,
+      609.9775462682578
+    ]
+  },
+  "escala": {
+    "base_score": 600,
+    "base_odds": 50,
+    "pdo": 20,
+    "factor": 28.85390081777927,
+    "offset": 487.1228762045055
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "num_cols": [
+    "loan_amnt",
+    "term_months",
+    "emp_length",
+    "annual_inc",
+    "dti",
+    "delinq_2yrs",
+    "inq_last_6mths",
+    "mths_since_last_delinq",
+    "open_acc",
+    "pub_rec",
+    "revol_bal",
+    "revol_util",
+    "total_acc",
+    "cr_hist_years"
+  ],
+  "cat_cols": [
+    "home_ownership",
+    "verification_status",
+    "purpose"
+  ],
+  "scale": {
+    "base_score": 600,
+    "base_odds": 50,
+    "pdo": 20,
+    "factor": 28.85390081777927,
+    "offset": 487.1228762045055
+  },
+  "defaults": {
+    "loan_amnt": 10000.0,
+    "term_months": 36.0,
+    "emp_length": 5.0,
+    "annual_inc": 60000.0,
+    "dti": 14.99,
+    "delinq_2yrs": 0.0,
+    "inq_last_6mths": 1.0,
+    "mths_since_last_delinq": 34.0,
+    "open_acc": 9.0,
+    "pub_rec": 0.0,
+    "revol_bal": 10392.0,
+    "revol_util": 56.4,
+    "total_acc": 21.0,
+    "cr_hist_years": 12.837782340862423,
+    "home_ownership": "RENT",
+    "verification_status": "Not Verified",
+    "purpose": "debt_consolidation"
+  },
+  "ranges": {
+    "loan_amnt": [
+      1350.0,
+      35000.0
+    ],
+    "term_months": [
+      36.0,
+      60.0
+    ],
+    "emp_length": [
+      0.0,
+      10.0
+    ],
+    "annual_inc": [
+      15056.580000000004,
+      230000.0
+    ],
+    "dti": [
+      0.6346000000000004,
+      32.5
+    ],
+    "delinq_2yrs": [
+      0.0,
+      3.0
+    ],
+    "inq_last_6mths": [
+      0.0,
+      5.0
+    ],
+    "mths_since_last_delinq": [
+      0.0,
+      81.0
+    ],
+    "open_acc": [
+      2.0,
+      23.0
+    ],
+    "pub_rec": [
+      0.0,
+      1.0
+    ],
+    "revol_bal": [
+      0.0,
+      81831.61999999998
+    ],
+    "revol_util": [
+      0.0,
+      97.6
+    ],
+    "total_acc": [
+      4.0,
+      56.0
+    ],
+    "cr_hist_years": [
+      3.504449007529089,
+      36.0
+    ]
+  },
+  "categories": {
+    "home_ownership": [
+      "MORTGAGE",
+      "NONE",
+      "OTHER",
+      "OWN",
+      "RENT"
+    ],
+    "verification_status": [
+      "Not Verified",
+      "Source Verified",
+      "Verified"
+    ],
+    "purpose": [
+      "car",
+      "credit_card",
+      "debt_consolidation",
+      "educational",
+      "home_improvement",
+      "house",
+      "major_purchase",
+      "medical",
+      "moving",
+      "other",
+      "renewable_energy",
+      "small_business",
+      "vacation",
+      "wedding"
+    ]
+  }
+}

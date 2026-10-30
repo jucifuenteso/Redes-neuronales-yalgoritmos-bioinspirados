@@ -1,0 +1,55 @@
+# Modo demostración (< 2 min). Usa datos SINTÉTICOS con el formato de Lending Club.
+# Sirve solo para probar que todo el flujo funciona; los resultados NO son los del trabajo.
+seed: 42
+paths:
+  raw: data/raw/loan_synthetic.csv
+  processed: data/processed/demo
+  models: models/demo
+  figures: reports/figures/demo
+  tables: reports/tables/demo
+synthetic:
+  n_rows: 60000
+data:
+  download_date: "sintetico"
+  sample_frac: 1.0
+  use_lc_pricing: false
+  split:
+    mode: temporal
+    train_end: "2012-12-31"
+    val_end: "2013-12-31"
+    random_val_frac: 0.15
+    random_test_frac: 0.15
+  clip_quantiles: [0.01, 0.99]
+  min_category_freq: 0.005
+baseline:
+  C_grid: [0.001, 0.01, 0.1, 1.0, 10.0]
+  select_metric: auc
+mlp_search:
+  n_trials: 6
+  max_epochs: 8
+  patience: 3
+  select_metric: auc
+  space:
+    n_layers: [1, 2]
+    units: [16, 32, 64]
+    activation: [relu, tanh, leaky_relu]
+    dropout: [0.0, 0.1, 0.2]
+    l2: [1.0e-6, 1.0e-3]
+    optimizer: [adam, sgd]
+    lr_adam: [1.0e-3, 1.0e-2]
+    lr_sgd: [2.0e-2, 1.0e-1]
+    batch_size: [512, 1024]
+final:
+  n_seeds: 3
+  max_epochs: 15
+  patience: 4
+  config: null
+scorecard:
+  base_score: 600
+  base_odds: 50
+  pdo: 20
+  n_background: 2000
+  n_grid: 10
+interpret:
+  n_repeats: 3
+  n_sample: 5000

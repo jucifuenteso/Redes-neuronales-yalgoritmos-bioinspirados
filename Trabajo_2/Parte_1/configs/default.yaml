@@ -1,0 +1,60 @@
+# Configuración COMPLETA (datos reales de Lending Club). Todo se puede cambiar
+# desde la línea de comandos:  --set mlp_search.n_trials=50 --set final.n_seeds=30
+seed: 42
+
+paths:
+  raw: data/raw/loan.csv          # archivo descargado de Kaggle (ranadeep/credit-risk-dataset)
+  processed: data/processed
+  models: models
+  figures: reports/figures
+  tables: reports/tables
+
+data:
+  download_date: "AAAA-MM-DD"     # <- COMPLETAR con la fecha real de descarga (el enunciado la exige)
+  sample_frac: 1.0                # <1.0 para submuestrear (modo demostración)
+  use_lc_pricing: false           # false = NO usar int_rate/grade (los fija Lending Club; ver docs/guia_conceptual.md)
+  split:
+    mode: temporal                # temporal | random
+    train_end: "2012-12-31"       # train: issue_d <= train_end
+    val_end: "2013-12-31"         # val: (train_end, val_end]; test (fuera de tiempo): > val_end
+    random_val_frac: 0.15         # solo para mode=random
+    random_test_frac: 0.15
+  clip_quantiles: [0.01, 0.99]    # winsorización calculada SOLO con train
+  min_category_freq: 0.005
+
+baseline:                         # regresión logística (L2)
+  C_grid: [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0]
+  select_metric: auc              # auc | logloss
+
+mlp_search:                       # búsqueda aleatoria (Bergstra & Bengio, 2012)
+  n_trials: 30
+  max_epochs: 25
+  patience: 4
+  select_metric: auc              # auc | logloss  (se mide en validación)
+  space:
+    n_layers: [1, 2, 3]
+    units: [16, 32, 64, 128]
+    activation: [relu, tanh, leaky_relu]
+    dropout: [0.0, 0.1, 0.2, 0.3]
+    l2: [1.0e-6, 1.0e-2]          # log-uniforme
+    optimizer: [adam, sgd]
+    lr_adam: [3.0e-4, 1.0e-2]     # log-uniforme
+    lr_sgd: [1.0e-2, 1.0e-1]      # log-uniforme
+    batch_size: [512, 1024, 2048]
+
+final:
+  n_seeds: 30                     # el enunciado exige >= 30
+  max_epochs: 60
+  patience: 6
+  config: null                    # null = usa models/best_mlp_config.json (resultado de la búsqueda)
+
+scorecard:
+  base_score: 600
+  base_odds: 50                   # odds (buenos:malos) en el puntaje base
+  pdo: 20                         # puntos para duplicar las odds
+  n_background: 5000
+  n_grid: 12
+
+interpret:
+  n_repeats: 5
+  n_sample: 20000

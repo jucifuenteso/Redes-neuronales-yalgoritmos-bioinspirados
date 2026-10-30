@@ -1,0 +1,11 @@
+{
+  "hidden": [
+    128
+  ],
+  "activation": "relu",
+  "dropout": 0.3,
+  "l2": 6.277730916958047e-05,
+  "optimizer": "adam",
+  "lr": 0.0004191980880805463,
+  "batch_size": 2048
+}
