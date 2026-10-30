@@ -1,0 +1,73 @@
+# Modo demostración (< 2 min). Usa datos SINTÉTICOS con el formato de Lending Club (incluidas las
+# columnas de recuperación que necesita la LGD). Sirve solo para probar el flujo: NO se reportan.
+#
+# La Parte 1 se ejecuta en su propio modo demostración, pero con todas sus salidas redirigidas a
+# Parte_2/demo_parte1/ para no tocar los resultados reales de la Parte 1. Ambas partes leen el MISMO
+# archivo sintético, de modo que las particiones coinciden.
+demostracion: true
+
+parte1:
+  config: configs/demo.yaml
+  sobreescrituras:
+    - "paths.raw=../Parte_2/data/raw/loan_synthetic_lgd.csv"
+    - "paths.processed=../Parte_2/demo_parte1/processed"
+    - "paths.models=../Parte_2/demo_parte1/models"
+    - "paths.tables=../Parte_2/demo_parte1/tables"
+    - "paths.figures=../Parte_2/demo_parte1/figures"
+
+paths:
+  processed: data/processed/demo
+  models: models/demo
+  figures: reports/figures/demo
+  tables: reports/tables/demo
+
+lgd:
+  estados_perdida_definitiva:
+    - "Charged Off"
+    - "Does not meet the credit policy. Status:Charged Off"
+
+lineal:
+  alpha_grid: [1.0e-6, 1.0, 100.0]
+
+logit_fraccional:
+  l2_grid: [0.0, 1.0e-3]
+  max_iteraciones: 2000                # L-BFGS de lote completo hasta convergencia (problema convexo)
+
+red:
+  perdida: bce
+  metrica_seleccion: rmse
+
+busqueda:
+  n_pruebas: 4
+  max_epocas: 60
+  paciencia: 5
+  configuracion_referencia:
+    hidden: [32, 16]
+    activation: relu
+    dropout: 0.1
+    l2: 1.0e-5
+    optimizer: adam
+    lr: 1.0e-3
+    batch_size: 512
+  espacio:
+    n_layers: [1, 2]
+    units: [16, 32, 64]
+    activation: [relu, tanh, leaky_relu]
+    dropout: [0.0, 0.1, 0.2]
+    l2: [1.0e-6, 1.0e-3]
+    optimizer: [adam, sgd]
+    lr_adam: [1.0e-3, 1.0e-2]
+    lr_sgd: [2.0e-2, 1.0e-1]
+    batch_size: [256, 512]
+
+final:
+  n_semillas: 3
+  max_epocas: 100
+  paciencia: 6
+  sobreescribir: {}
+
+ablacion:
+  n_semillas: 3
+
+perdida_esperada:
+  exigir_consistencia_con_parte1: true

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/*.csv
+data/raw/*.zip
+!data/raw/.gitkeep
+# salidas del modo demostración (datos sintéticos, no se reportan)
+demo_parte1/
+data/processed/demo/
+models/demo/
+reports/tables/demo/
+reports/figures/demo/

@@ -1,0 +1,76 @@
+# Configuración COMPLETA de la Parte 2 (LGD y pérdida esperada) con los datos reales.
+# Todo se puede cambiar desde la línea de comandos, por ejemplo:
+#   python -m lgdmodel final --set final.n_semillas=5 --set final.sobreescribir.hidden=[64,32]
+#
+# La semilla, la partición temporal, el archivo loan.csv y el uso de int_rate/grade NO se definen aquí:
+# se heredan del YAML de la Parte 1 indicado en parte1.config (mismos datos y particiones que la PD).
+# Para cambiarlos solo en la Parte 2:  --set-parte1 data.split.val_end=2013-06-30
+# (la pérdida esperada lo detectará y se detendrá, porque la PD se entrenó con otra partición).
+
+parte1:
+  config: configs/default.yaml        # relativo a la carpeta Parte_1
+  sobreescrituras: []                 # lista de "clave=valor" aplicadas a la config de la Parte 1
+
+paths:                                # relativas a la carpeta Parte_2
+  processed: data/processed
+  models: models
+  figures: reports/figures
+  tables: reports/tables
+
+lgd:
+  # Estados cuyo resultado de cobranza ya es definitivo: solo en ellos se observa la LGD.
+  # "Default" y "Late (31-120 days)" son malos para la PD, pero su recuperación aún no ocurre
+  # (verifíquenlo con `describir`: tabla lgd_recuperaciones_por_estado.csv).
+  estados_perdida_definitiva:
+    - "Charged Off"
+    - "Does not meet the credit policy. Status:Charged Off"
+
+lineal:                               # referencia 1: regresión lineal con penalización L2 (Ridge)
+  alpha_grid: [1.0e-6, 0.01, 1.0, 10.0, 100.0, 1000.0]
+
+logit_fraccional:                     # referencia 2: red SIN capas ocultas + sigmoide + BCE (Papke y Wooldridge, 1996)
+  l2_grid: [0.0, 1.0e-5, 1.0e-4, 1.0e-3, 1.0e-2]
+  max_iteraciones: 2000                # L-BFGS de lote completo hasta convergencia (problema convexo)
+
+red:
+  perdida: bce                        # bce (cuasi-verosimilitud Bernoulli) | mse (verosimilitud gaussiana)
+  metrica_seleccion: rmse             # rmse | mae, medida en validación
+
+busqueda:                             # búsqueda aleatoria (Bergstra y Bengio, 2012); prueba 0 = referencia
+  n_pruebas: 30
+  max_epocas: 25
+  paciencia: 4
+  configuracion_referencia:
+    hidden: [32, 16]
+    activation: relu
+    dropout: 0.1
+    l2: 1.0e-5
+    optimizer: adam
+    lr: 1.0e-3
+    batch_size: 512
+  espacio:                            # mismo formato que la Parte 1 (pdmodel.experiments.sample_config)
+    n_layers: [1, 2, 3]
+    units: [16, 32, 64, 128]
+    activation: [relu, tanh, leaky_relu]
+    dropout: [0.0, 0.1, 0.2, 0.3]
+    l2: [1.0e-6, 1.0e-2]              # log-uniforme
+    optimizer: [adam, sgd]
+    lr_adam: [3.0e-4, 1.0e-2]         # log-uniforme
+    lr_sgd: [1.0e-2, 1.0e-1]          # log-uniforme
+    batch_size: [256, 512, 1024]
+
+final:
+  n_semillas: 30                      # el enunciado exige >= 30; semillas = semilla + 1000 + k (como la Parte 1)
+  max_epocas: 60
+  paciencia: 6
+  # Claves que se sobreescriben sobre la mejor configuración de la búsqueda (models/lgd_mejor_configuracion.json).
+  # Se combinan clave por clave: --set final.sobreescribir.hidden=[8] cambia SOLO la arquitectura.
+  sobreescribir: {}
+
+ablacion:                             # misma configuración y semillas, BCE frente a MSE
+  n_semillas: 30
+
+perdida_esperada:
+  # Si la partición de la Parte 2 no coincide con la que generó los modelos de PD de la Parte 1,
+  # se detiene (habría créditos de prueba usados para entrenar la PD).
+  exigir_consistencia_con_parte1: true

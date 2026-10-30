@@ -1,0 +1,3 @@
+# Un solo entorno para todo el Trabajo 2: la Parte 2 importa el código de la Parte 1 (pdmodel)
+# y usa exactamente sus mismas versiones fijas.
+-r ../Parte_1/requirements.txt
