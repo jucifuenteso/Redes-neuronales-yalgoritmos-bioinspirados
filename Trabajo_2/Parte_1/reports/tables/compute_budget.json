@@ -1,14 +1,14 @@
 {
   "LR": {
     "n_configuraciones": 7,
-    "segundos_busqueda": 2.00714111328125,
+    "segundos_busqueda": 2.6124863624572754,
     "n_params": 48
   },
   "MLP": {
     "n_configuraciones": 30,
-    "segundos_busqueda": 119.73970699310303,
-    "segundos_corridas_finales": 471.6772475242615,
-    "n_semillas": 30,
+    "segundos_busqueda": 207.766042470932,
+    "segundos_corridas_finales": 115.65787982940674,
+    "n_semillas": 5,
     "n_params": 6273,
     "config": {
       "hidden": [
