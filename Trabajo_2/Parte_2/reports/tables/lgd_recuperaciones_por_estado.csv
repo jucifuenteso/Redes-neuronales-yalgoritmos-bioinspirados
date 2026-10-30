@@ -1,0 +1,5 @@
+loan_status,n,fraccion_con_recuperaciones,recuperacion_media_sobre_desembolso,capital_pagado_medio_sobre_desembolso
+Charged Off,45248,0.5345429632248939,0.05844048769066768,0.250776455497114
+Default,1219,0.0,0.0,0.2541749179190797
+Does not meet the credit policy. Status:Charged Off,761,0.6438896189224704,0.06181942737836094,0.324416803329809
+Late (31-120 days),11591,0.0,0.0,0.26699012277183387

@@ -1,0 +1,19 @@
+{
+  "n_configuraciones": 30,
+  "segundos_total": 11.631699085235596,
+  "perdida": "bce",
+  "mejor_configuracion": {
+    "hidden": [
+      128,
+      128,
+      128
+    ],
+    "activation": "leaky_relu",
+    "dropout": 0.2,
+    "l2": 0.0013145103232150123,
+    "optimizer": "adam",
+    "lr": 0.0024324934212152827,
+    "batch_size": 512
+  },
+  "mejor_val_rmse": 0.1608688099435806
+}

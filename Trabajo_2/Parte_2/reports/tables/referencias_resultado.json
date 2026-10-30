@@ -1,0 +1,42 @@
+{
+  "constante": {
+    "valor": 0.5977395593989773,
+    "n_parametros": 1,
+    "val": {
+      "mae": 0.15304759884310357,
+      "rmse": 0.18165487927599713
+    },
+    "test": {
+      "mae": 0.22123039852326926,
+      "rmse": 0.24392326853265092
+    }
+  },
+  "lineal": {
+    "alpha_elegido": 1000.0,
+    "n_configuraciones": 6,
+    "segundos_busqueda": 0.018926620483398438,
+    "n_parametros": 48,
+    "val": {
+      "mae": 0.13333367988956446,
+      "rmse": 0.16661467031683003
+    },
+    "test": {
+      "mae": 0.21675978883189742,
+      "rmse": 0.2399063831224276
+    }
+  },
+  "logit_fraccional": {
+    "l2_elegido": 0.01,
+    "n_configuraciones": 5,
+    "segundos_busqueda": 0.3998684883117676,
+    "n_parametros": 48,
+    "val": {
+      "mae": 0.1332855019049599,
+      "rmse": 0.16678758551338588
+    },
+    "test": {
+      "mae": 0.2169932549892857,
+      "rmse": 0.24031558947523843
+    }
+  }
+}

@@ -1,0 +1,5 @@
+loan_status,train,val,test,lgd_observable
+Charged Off,13658,14836,16754,True
+Default,37,182,1000,False
+Does not meet the credit policy. Status:Charged Off,761,0,0,True
+Late (31-120 days),273,1780,9538,False

@@ -1,0 +1,67 @@
+{
+  "archivo": "C:\\Users\\Santiago\\Documents\\Trabajo redes Neur\\Redes-neuronales-yalgoritmos-bioinspirados\\Trabajo_2\\Parte_1\\data\\raw\\loan.csv",
+  "fecha_descarga": "AAAA-MM-DD",
+  "registros_crudos": 887379,
+  "columnas_en_archivo": 74,
+  "columnas_usadas": 25,
+  "registros_etiquetados": 268530,
+  "periodo_originacion": [
+    "2007-06-01",
+    "2015-12-01"
+  ],
+  "estados_perdida_definitiva": [
+    "Charged Off",
+    "Does not meet the credit policy. Status:Charged Off"
+  ],
+  "por_particion": {
+    "train": {
+      "n_creditos": 90347,
+      "n_incumplidos": 14729,
+      "n_lgd_observada": 14419,
+      "lgd_media": 0.5977395593989775
+    },
+    "val": {
+      "n_creditos": 73194,
+      "n_incumplidos": 16798,
+      "n_lgd_observada": 14836,
+      "lgd_media": 0.6603444124665883
+    },
+    "test": {
+      "n_creditos": 104989,
+      "n_incumplidos": 27292,
+      "n_lgd_observada": 16754,
+      "lgd_media": 0.8115536675257312
+    }
+  },
+  "incumplidos_por_estado": {
+    "Charged Off": 45248,
+    "Late (31-120 days)": 11591,
+    "Default": 1219,
+    "Does not meet the credit policy. Status:Charged Off": 761
+  },
+  "consistencia_con_parte1": {
+    "verificado": true,
+    "coincide": true,
+    "por_particion": {
+      "train": {
+        "n_parte1": 90347,
+        "n_parte2": 90347,
+        "tasa_malos_parte1": 0.16302699591574707,
+        "tasa_malos_parte2": 0.16302699591574707
+      },
+      "val": {
+        "n_parte1": 73194,
+        "n_parte2": 73194,
+        "tasa_malos_parte1": 0.22949968576659288,
+        "tasa_malos_parte2": 0.22949968576659288
+      },
+      "test": {
+        "n_parte1": 104989,
+        "n_parte2": 104989,
+        "tasa_malos_parte1": 0.25995104249016565,
+        "tasa_malos_parte2": 0.25995104249016565
+      }
+    },
+    "archivo_parte1": "C:\\Users\\Santiago\\Documents\\Trabajo redes Neur\\Redes-neuronales-yalgoritmos-bioinspirados\\Trabajo_2\\Parte_1\\reports\\tables\\data_summary.json"
+  }
+}
